@@ -5108,6 +5108,31 @@ mysql_query("INSERT INTO `md_configuration` (`entry_id`, `var_name`, `var_value`
 mysql_query("INSERT INTO `md_uaccounts` ( `email_address`, `pass_word`, `account_status`, `account_type`, `first_name`, `last_name`, `creation_date`) VALUES
 ('".strtolower($mad_basic_configuration['admin_email'])."', '".md5($mad_basic_configuration['admin_pass'])."', '1', '1', '".$mad_basic_configuration['admin_firstname']."', '".$mad_basic_configuration['admin_lastname']."', '".time()."');", $maindb);
 
+
+/***************** BEGIN : CUSTOMIZATION *********************/
+
+mysql_query('CREATE TABLE IF NOT EXISTS `md_ad_unit_locations` (
+  `adv_location_id` int(11) NOT NULL AUTO_INCREMENT,
+  `adv_location_name` varchar(255) NOT NULL,
+  `adv_location_lat` float(10,6) NOT NULL,
+  `adv_location_lon` float(10,6) NOT NULL,
+  PRIMARY KEY (`adv_location_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;', $maindb);
+
+mysql_query('CREATE TABLE IF NOT EXISTS `md_ad_unit_to_locations` (
+  `adv_unit_to_location_id` int(11) NOT NULL AUTO_INCREMENT,
+  `adv_id` int(11) NOT NULL,
+  `adv_location_id` int(11) NOT NULL,
+  `adv_location_radius` float NOT NULL,
+  `adv_location_bound_lat_min` float(10,6) NOT NULL,
+  `adv_location_bound_lon_min` float(10,6) NOT NULL,
+  `adv_location_bound_lat_max` float(10,6) NOT NULL,
+  `adv_location_bound_lon_max` float(10,6) NOT NULL,
+  PRIMARY KEY (`adv_unit_to_location_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;', $maindb);
+
+/*****************   END : CUSTOMIZATION *********************/
+
 $configfile_content='
 ;<?php exit; ?>
 ;*** DO NOT REMOVE THE LINE ABOVE ***
