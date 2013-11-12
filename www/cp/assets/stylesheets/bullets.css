@@ -1,0 +1,29 @@
+/* ---------------------------------- */
+/* @Default Styles */
+
+ul.bullet				{ margin-left: 0; }
+ul.bullet li			{ background: url(../images/bullets/bullet_blue.png) no-repeat 0 2px; list-style-type: none; padding-left: 22px; }
+
+
+/* ---------------------------------- */
+/* @Semantic Classes */
+
+ul.bullet.primary li	{ background-image: url(../images/bullets/bullet_blue.png); }
+ul.bullet.secondary li	{ background-image: url(../images/bullets/bullet_black.png); }
+ul.bullet.tertiary li	{ background-image: url(../images/bullets/bullet_gray.png); }
+ul.bullet.quaternary li	{ background-image: url(../images/bullets/bullet_white.png); }
+
+
+/* ---------------------------------- */
+/* @Color Classes */
+
+ul.bullet.bullet-green li		{ background-image: url(../images/bullets/bullet_green.png); }
+ul.bullet.bullet-red li		{ background-image: url(../images/bullets/bullet_red.png); }
+ul.bullet.bullet-orange li		{ background-image: url(../images/bullets/bullet_orange.png); }
+ul.bullet.bullet-yellow li		{ background-image: url(../images/bullets/bullet_yellow.png); }
+ul.bullet.bullet-blue li		{ background-image: url(../images/bullets/bullet_blue.png); }
+ul.bullet.bullet-pink li		{ background-image: url(../images/bullets/bullet_pink.png); }
+ul.bullet.bullet-black li		{ background-image: url(../images/bullets/bullet_black.png); }
+ul.bullet.bullet-purple li		{ background-image: url(../images/bullets/bullet_purple.png); }
+ul.bullet.bullet-white li		{ background-image: url(../images/bullets/bullet_white.png); }
+ul.bullet.bullet-gray li		{ background-image: url(../images/bullets/bullet_gray.png); }

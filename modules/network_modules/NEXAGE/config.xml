@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href=""?>
+
+<networkplugin>
+    <name>Nexage Exchange</name>
+    <version>1.0</version>
+    <networkid>NEXAGE</networkid>
+    <signuplink>http://www.nexage.com/</signuplink>
+    <info_content><![CDATA[
+        <h3>Network Info</h3>Nexage is the leading mobile advertising exchange, creating a highly efficient and liquid market for buyers and sellers alike. The Nexage Exchange creates mutual value: it enables publishers and developers to accelerate their revenue growth; it enables DSPs, ad networks, and real-time buyers to target and buy the audience they need when they need it to deliver successful campaigns.<br><br><h3>Ad Formats</h3>Nexage supports both Banner Ads, Text Ads and Interstitials.<br><br><h3>Best Countries</h3>International
+    ]]></info_content>
+    <banner_support>1</banner_support>
+    <interstitial_support>1</interstitial_support>
+	<pub_ids>
+	<pubid>DCN / Site ID</pubid>
+	<pubid>Position</pubid>
+	</pub_ids>
+</networkplugin>

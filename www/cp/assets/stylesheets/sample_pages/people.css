@@ -1,0 +1,22 @@
+/* -------------------------------------------------------------- 
+   People Page
+-------------------------------------------------------------- */		
+.department { float: left; margin-bottom: 3em; }
+.department h2 { font-size: 18px; color: #F90; border-bottom: 1px dotted #CCC; padding-bottom: 4px; margin-bottom: 1.5em; }
+.user-card { width: 27%; font-size: 11px; margin: 0 4.5% 1.5em 0; float: left; }
+.user-card img 
+{ 
+	border: 1px solid #CCC; 
+	padding: 1px; 			
+	-moz-border-radius: 4px; 
+	-webkit-border-radius: 4px; 
+	border-radius: 4px; 
+	
+}
+.user-card .avatar { width: 40px; display: table-cell; vertical-align: top; padding-right: 15px; position: relative; top: 5px; }
+.user-card .details { width: 145px; display: table-cell; vertical-align: top; }
+
+
+@media all and (max-width: 767px) and (min-width: 1px) {
+	.user-card { width: 45%; }
+}

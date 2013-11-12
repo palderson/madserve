@@ -1,0 +1,15 @@
+<script src='REPL_MADURL/ad.js'></script> <!--This goes in your HEAD Section -->
+
+<!--Place the code below everywhere where you want an ad to appear. -->
+<script>
+RequestAd_({
+
+    // Ad Request Variables
+    s:'REPL_MADZONEHASH',
+    m:'live',
+    backfillhtml:'',
+    prependclickcontent:'',
+    requesturl:'REPL_MADURL/md.request.php',
+    trackingpixelurl:''
+	});
+</script>

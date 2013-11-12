@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href=""?>
+
+<networkplugin>
+    <name>Aditic (Sofialys)</name>
+    <version>1.0</version>
+    <networkid>ADITIC</networkid>
+    <signuplink>http://www.aditic.com/</signuplink>
+    <info_content><![CDATA[
+        <h3>Network Info</h3>The ADITIC brand is a product from Sofialys, the leading mobile advertising and marketing company. Our team has been working for over 6 years in the field of new technologies and advertising and we have leveraged this expertise to develop ADITIC and make it an easy-to-use platform for all of our customers.<br><br><h3>Ad Formats</h3>Aditic supports both Banner Ads and Text Ads.<br><br><h3>Best Countries</h3>France
+    ]]></info_content>
+    <banner_support>1</banner_support>
+    <interstitial_support>0</interstitial_support>
+	<pub_ids>
+	<pubid>Ad Location ID (ALID)</pubid>
+	<pubid>Publisher ID (PID)</pubid>
+	</pub_ids>
+</networkplugin>

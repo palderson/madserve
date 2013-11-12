@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href=""?>
+
+<networkplugin>
+    <name>AdFonic</name>
+    <version>1.0</version>
+    <networkid>ADFONIC</networkid>
+    <signuplink>http://www.adfonic.com/</signuplink>
+    <info_content><![CDATA[
+        <h3>Network Info</h3>Adfonic is a global mobile advertising marketplace. We enable mobile site publishers and app developers to generate revenue from their mobile sites and apps through display advertising campaigns from major international brands.<br><br><h3>Ad Formats</h3>AdFonic supports both Standard Banners, Text Banners and Full Page Interstitials.<br><br><h3>Best Countries</h3>UK
+    ]]></info_content>
+    <banner_support>1</banner_support>
+    <interstitial_support>1</interstitial_support>
+	<pub_ids>
+	<pubid>Ad Slot ID</pubid>
+	</pub_ids>
+</networkplugin>

@@ -1,0 +1,261 @@
+@media all and (max-width: 1024px) and (min-width: 768px) {
+	
+	.container {
+		width: 94%;
+	}
+	
+	.container [class^="grid-"] {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+}
+
+
+
+
+
+
+
+
+@media all and (max-width: 767px) and (min-width: 1px) {
+
+	body { background-image: none; }
+	
+
+
+	/* ---------------------------------- */
+	/* @Grid */
+	.container {
+		width: auto;
+		margin: 0 15px;
+	}
+	
+	.container [class^="grid-"] {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+	
+
+	/* ---------------------------------- */
+	/* @Header */
+	
+	#header {
+		height: 45px;
+	}
+
+		#header h1 { background-image: url(../images/logo_small.png); width: 130px; height: 21px; top: 13px; }
+		
+		#header #reveal-nav { display: block; }
+		#sidebar.revealShow { display: block; }
+
+
+	/* ---------------------------------- */
+	/* @TopNav */
+	
+	#topNav { padding: 15px 0; position: static; top: 0; left: 0; }
+	
+	
+		#topNav ul { padding: 0; margin: 0 0 -10px; }
+		
+		#topNav li { float: none; margin: 0 0 0 5px; }
+		
+		#topNav li a {
+			background: url(../images/bulletBlack.png) no-repeat 8px 50%;
+			display: block;
+			padding-left: 22px;
+			padding-top: 1em;
+			padding-bottom: 1em;
+			margin: 0;
+			border-bottom: 1px dotted #333;
+		}
+		
+
+	/* ---------------------------------- */
+	/* @Menu */			
+	#topNav .menu { display: none; }
+
+	.menu-container.menu-type-topnav {
+		display: block !important;
+		
+		position: static;
+		top: 0;
+		left: 0;
+		
+		border: none;
+		
+		border-bottom: 1px dotted #333;
+		
+		box-shadow: none;
+		
+		-moz-border-radius: 0;
+		-webkit-border-radius: 0;
+		border-radius: 0;	
+	}
+	
+	.menu-dropdown.menu-type-topnav .menu-content ul {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	
+	.menu-dropdown.menu-type-topnav .menu-content li {
+		padding-top: 0;
+		paddinb-bottom: 0;
+		border: none;
+	}
+
+
+
+	/* ---------------------------------- */
+	/* @QuickNav */
+	
+	#quickNav { top: 10px; left: 160px; }
+
+
+
+	/* ---------------------------------- */
+	/* @Sidar */
+	#sidebar {
+		width: 100%;
+		float: none;
+		position: static;
+		display: none;
+	}
+	
+	#sidebar ul {
+		width: 100%;
+	}
+	
+	
+	
+	
+	/* ---------------------------------- */
+	/* @Mainnav */
+
+	#mainNav li.nav .subNav { width: 100%; margin-left: 0; padding-left: 0; left: 0; }
+	
+	#mainNav li.nav .subNav li { position: relative; margin-left: 35px; width: auto; }
+	
+	
+	#mainNav li.nav [class^="icon-"], #mainNav li.nav [class*=" icon-"] {
+	background-image: url(../images/sprite/sprite-12-black.png);
+		width: 12px;
+		height: 12px;
+		top: 12px;
+	}
+	
+	#mainNav li.nav a {
+		width: 100%;
+		font-size: 12px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+
+	#mainNav li.nav.active { background: none; }
+	
+	#mainNav li.nav.dropdown a {
+		padding-bottom: 6px;
+	}
+	
+	#mainNav li.nav .subNav li a {
+		width: 100%;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		
+		-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+	}
+	
+	#mainNav .dropdown .dropdownArrow {
+		top: 15px;
+	}
+
+
+
+
+	/* ---------------------------------- */
+	/* @Search */
+	#search {
+		width: 100%;
+		min-height: 0;
+		display: block;
+	}
+	
+	#search input {
+		width: 100%;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+	}
+	
+	
+	
+	/* ---------------------------------- */
+	/* @Content */
+
+	#content {
+		position: static;
+		margin: 0;
+	}
+	
+	#contentHeader { height: 50px; top: auto; }
+	
+	#contentHeader h1 { font-size: 18px; font-weight: 600; position: relative; left: 0; top: 17px; padding-left: 15px; }
+	
+	#content .container { top: auto; }
+
+
+
+
+
+	/* ---------------------------------- */
+	/* @Tables */
+	.table thead th { padding: 3px; }
+	.table tbody td { padding: 3px; }
+
+
+
+
+	/* ---------------------------------- */
+	/* @Widgets */
+	.widget-table { overflow: hidden; }
+	.widget-table .dataTables_info { display: none; }
+	.widget-table .dataTables_paginate { width: 97%; }
+	
+	.widget-table .dataTables_paginate .first
+	, .widget-table .dataTables_paginate .last { display: none; }
+	
+	.widget .tabs a { font-size: 10px; padding: 0 6px; }
+	
+	.widget-calendar .fc-header-right .fc-button.fc-state-default { font-size: 10px; padding: 0 4px; }
+
+
+
+	/* ---------------------------------- */
+	/* @Forms */
+	.form .field-group .field {
+		display: block;
+	}
+	
+	.form .field-group .field input, .form .field-group .field textarea, .form .field-group .field select { width: 98%; }
+	
+	.form .control-group .field { width: 100%; display: block; }
+
+
+	/* ---------------------------------- */
+	/* @Errors */
+	#error-wrapper h1 {
+		font-size: 84px;
+		margin-bottom: .75em;
+	}
+
+	/* ---------------------------------- */
+	/* @Dashboard */
+	.dashboard_report { width: 46.24%; margin: 0 1.5% 1em; }
+	.dashboard_report:last-child { margin-right: 1.5%; }
+	h2.dashboard_title span { display: block; padding: 6px 0 0; }
+
+}

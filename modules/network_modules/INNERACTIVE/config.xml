@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href=""?>
+
+<networkplugin>
+    <name>inneractive</name>
+    <version>1.0</version>
+    <networkid>INNERACTIVE</networkid>
+    <signuplink>http://www.inner-active.com/</signuplink>
+    <info_content><![CDATA[
+        <h3>Network Info</h3>Founded in 2007 as an in-game ad network, inneractive has expanded to over 40 employees, multiple global offices including a Silicon Valley office as well as an office in the UK, and a full-blown in-app monetization exchange. The company now works with some of the leading names in app development such as EA, Halfbrick, and Pico Brothers, as well as development platforms such as Corona and others. With over 100 ad partners, inneractive answers the needs of global developers of all sizes, on all platforms, and targets users is 200 countries around the world. <br><br><h3>Ad Formats</h3>Inneractive supports both Banner Ads and Text Ads.<br><br><h3>Warning!</h3><strong></strong>Please note that this ad network does not work with the mAdserve Javascript Tags / SDKs, and only with your PHP tags.</strong>
+    ]]></info_content>
+    <banner_support>1</banner_support>
+    <interstitial_support>0</interstitial_support>
+	<pub_ids>
+	<pubid>Application ID</pubid>
+	</pub_ids>
+</networkplugin>

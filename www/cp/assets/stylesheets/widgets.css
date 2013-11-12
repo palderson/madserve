@@ -1,0 +1,121 @@
+/* =Widget
+----------------------------------------------- */
+.widget {
+	width: auto;
+	
+	margin-bottom: 2em;
+	border: 1px solid #D5D5D5;
+	
+	border-radius: 4px;
+	position: relative;
+	
+	clear: both;
+	
+	overflow: hidden;
+}
+	
+/* =Widget Header
+----------------------------------------------- */
+.widget-header {
+	background: #E9E9E9;
+	background:-moz-linear-gradient(top, #FAFAFA 0%, #E9E9E9 100%); /* FF3.6+ */
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#FAFAFA), color-stop(100%,#E9E9E9)); /* Chrome,Safari4+ */
+	background:-webkit-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%); /* Chrome10+,Safari5.1+ */
+	background:-o-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%); /* Opera11.10+ */
+	background:-ms-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%); /* IE10+ */
+	background:linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9')";
+	
+	height: 40px;
+	line-height: 40px;
+	
+	border-bottom: 1px solid #D5D5D5;
+	
+	position: relative;
+	
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	
+	-webkit-background-clip: padding-box;
+}	
+	
+	.widget-header h3 {
+		font-size: 14px;
+		font-weight: 800;
+		color: #555;
+		line-height: 18px;
+		display: inline-block;
+		margin-right: 3em;
+		
+		position: relative;
+		top: 2px;
+		left: 10px;
+		
+		text-shadow: 1px 1px 2px rgba(255,255,255,.5);
+	}
+	
+		.widget-header [class^="icon-"], .widget-header [class*=" icon-"] {
+			background-image: url(../images/sprite/sprite-16-black.png);
+			background-repeat: no-repeat;
+			
+			width: 16px;
+			height: 16px;
+			display: inline-block;
+			
+			opacity: .7;
+			filter:alpha(opacity=70);
+			
+			position: relative;
+			top: 5px;
+			
+			margin-left: 10px;
+			margin-right: -2px;
+		}
+
+
+/* =Widget Content
+----------------------------------------------- */	
+.widget-content {
+	padding: 20px 15px 15px;
+}
+
+/* Widget Content Clearfix */	
+.widget-content:before,
+.widget-content:after {
+    content:"";
+    display:table;
+}
+
+.widget-content:after {
+    clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.widget-content {
+    zoom:1;
+}
+
+
+
+
+/* =Extra
+----------------------------------------------- */
+.widget.nopad .widget-content { padding: 0; }
+
+.container [class^="grid-"] .widget:last-child { margin-bottom: 0; }
+.widget .visualize { margin-top: 2em; }
+	
+
+	
+
+
+/* =Plain Styling
+----------------------------------------------- */
+.widget-plain { border: none; }
+.widget-plain .widget-header { display: none; }
+.widget-plain .widget-content { padding: 0; }

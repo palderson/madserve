@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href=""?>
+
+<networkplugin>
+    <name>MobGold</name>
+    <version>1.0</version>
+    <networkid>MOBGOLD</networkid>
+    <signuplink>http://www.mobgold.com/</signuplink>
+    <info_content><![CDATA[
+        <h3>Network Info</h3>MobGold helps Advertisers to drive traffic into their mobile sites or create strong brand awareness across the MobGold Network. If you are an Advertiser and would like to reach users using targeted ads, get started with MobGold or learn more about our solution.<br><br><h3>Ad Formats</h3>MobGold supports both Banner Ads, and Text Ads.<br><br><h3>Best Countries</h3>Unknown
+    ]]></info_content>
+    <banner_support>1</banner_support>
+    <interstitial_support>0</interstitial_support>
+	<pub_ids>
+	<pubid>Site ID</pubid>
+	</pub_ids>
+</networkplugin>

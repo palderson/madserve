@@ -1,0 +1,88 @@
+<?php
+/* mAdserve PHP (curl) Tag */
+
+
+$madserve_parameters = array(
+  'PUBLISHER_ID'      => 'REPL_MADZONEHASH', // Required to request ads. This is the Placement / Zone ID from your mAdserve control panel.
+  'AD_REQUEST'        => true, // To request an ad, set to TRUE.
+);
+
+/* This code supports the ability for your website to set a cookie on behalf of mAdserve, which can then be sent to third part ad networks for improved ad targeting.
+ * To set a mAdserve cookie, simply call madserve_setcookie() on any page that you call madserve_request()
+ * The call to madserve_setcookie() must occur before any output has been written to the page (http://www.php.net/setcookie)
+ * If your mobile site uses multiple subdomains (e.g. "a.example.com" and "b.example.com"), then pass the root domain of your mobile site (e.g. "example.com") as a parameter to madserve_setcookie().
+ * This will allow the mAdserve cookie to be visible across subdomains
+ */
+//madserve_setcookie();
+ 
+// Send request to your mAdserve ad server. To make additional ad requests per page, copy and paste this function call elsewhere on your page.
+echo madserve_request($madserve_parameters);
+
+// We recommend placing the following code in a separate file that is included where needed.
+
+function madserve_request($madserve_parameters) {
+
+  $ad_mode = false;
+  if (!empty($madserve_parameters['AD_REQUEST']) && !empty($madserve_parameters['PUBLISHER_ID'])) $ad_mode = true;
+    
+  $protocol = 'http';
+  if (!empty($_SERVER['HTTPS']) && strtolower($_SERVER['HTTPS']) != 'off') $protocol = 'https';
+  
+  $rt = 'php';
+  
+  list($usec, $sec) = explode(' ', microtime()); 
+  $params = array('rt=' . $rt,
+                  'u=' . urlencode($_SERVER['HTTP_USER_AGENT']), 
+                  'i=' . urlencode($_SERVER['REMOTE_ADDR']), 
+                  'p=' . urlencode("$protocol://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']),
+                  'v=' . urlencode('MADSERVEPHPCURL1')); 
+
+  if ($ad_mode) $params[] = 's=' . $madserve_parameters['PUBLISHER_ID'];
+  if (!empty($_COOKIE['madserve_cookie'])) $params[] = 'o=' . $_COOKIE['madserve_cookie'];
+
+  $ignore = array('HTTP_PRAGMA' => true, 'HTTP_CACHE_CONTROL' => true, 'HTTP_CONNECTION' => true, 'HTTP_USER_AGENT' => true, 'HTTP_COOKIE' => true);
+  foreach ($_SERVER as $k => $v) {
+    if (substr($k, 0, 4) == 'HTTP' && empty($ignore[$k]) && isset($v)) {
+      $params[] = urlencode('h[' . $k . ']') . '=' . urlencode($v);
+    }
+  }
+  
+  $post = implode('&', $params);
+  $request = curl_init();
+  $request_timeout = 3; // 3 second timeout
+  curl_setopt($request, CURLOPT_URL, 'REPL_MADURL/md.request.php?' . $post);
+  curl_setopt($request, CURLOPT_RETURNTRANSFER, 1);
+  curl_setopt($request, CURLOPT_TIMEOUT, $request_timeout);
+  curl_setopt($request, CURLOPT_CONNECTTIMEOUT, $request_timeout);
+  curl_setopt($request, CURLOPT_HTTPHEADER, array('Content-Type: application/x-www-form-urlencoded', 'Connection: Close'));
+  list($usec_start, $sec_start) = explode(' ', microtime());
+  $contents = curl_exec($request);
+  list($usec_end, $sec_end) = explode(' ', microtime());
+  curl_close($request);
+
+  if ($contents === true || $contents === false) $contents = '';
+  
+  if (preg_match('<!-- No Ad Available -->', $contents)){ 
+  global $no_ad_availible;
+  $no_ad_availible=true;
+  }
+  else
+  {
+  global $no_ad_availible;
+  $no_ad_availible=false;  
+  }
+
+  
+  return $contents;
+}
+
+function madserve_setcookie($domain = '', $path = '/') {
+  if (empty($_COOKIE['madserve_cookie'])) {    
+    $value = md5(uniqid(rand(), true));
+    if (!empty($domain) && $domain[0] != '.') $domain = ".$domain";
+    if (setcookie('madserve_cookie', $value, mktime(0, 0, 0, 1, 1, 2038), $path, $domain)) {
+      $_COOKIE['madserve_cookie'] = $value; // make it visible to madserve_request()
+    } 
+  }
+}
+?>

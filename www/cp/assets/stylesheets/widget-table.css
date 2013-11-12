@@ -1,0 +1,82 @@
+.widget-table .dataTables_wrapper .DataTables_sort_icon { display: inline-block; margin-left: 1em; position: relative; top: 4px; }
+	
+
+/* Widget Table Styles */
+.widget-table .table { margin-bottom: 0; border-top: none; border-left: none; }
+
+.widget-table .table tbody tr:last-child td { border-bottom: none; }
+
+.widget-table .table tr td:last-child
+, .widget-table .table tr th:last-child { border-right: none; }
+
+.widget-table table.table thead th { border-top: none; border-left: none; cursor: pointer; }
+
+
+	
+	.widget-table .widget-content { padding: 0; }
+	
+	
+	.widget-table .dataTables_wrapper .ui-widget-header { border: none; }
+
+	
+	
+	
+	
+	
+	
+	.widget-table .dataTables_wrapper .ui-buttonset .ui-button {
+		background: #FFF;
+		padding: 0 6px;
+		margin-right: 4px;
+		
+		border-radius: 4px;
+	}
+	
+	.widget-table .dataTables_wrapper .dataTables_paginate span span.ui-state-disabled {
+		opacity: 1;
+		filter: Alpha(Opacity=100);
+	}
+	
+	
+	
+	.widget-table .dataTables_length { display: none; }
+	
+	.widget-table .dataTables_filter {
+		position: absolute;
+		top: -34px;
+		right: 5px;
+	}
+	
+	.widget-table .dataTables_filter input {
+		font-size: 11px;
+		padding: 4px 6px;
+	}
+	
+	.widget-table .dataTables_filter label { color: #666; }
+	
+	
+	.widget-table .dataTables_wrapper .fg-toolbar {
+		background: #E9E9E9;
+		background:-moz-linear-gradient(top, #FAFAFA 0%, #E9E9E9 100%); /* FF3.6+ */
+		background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#FAFAFA), color-stop(100%,#E9E9E9)); /* Chrome,Safari4+ */
+		background:-webkit-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%); /* Chrome10+,Safari5.1+ */
+		background:-o-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%); /* Opera11.10+ */
+		background:-ms-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%); /* IE10+ */
+		background:linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9');
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9')";
+		
+	}
+	
+		.widget-table .dataTables_wrapper .fg-toolbar:last-child {
+			width: 100%;
+			color: #555;
+			float: left;
+			padding: 10px 0;
+			border-top: 1px solid #DDD;
+		}
+		
+		
+		
+		.widget-table .dataTables_info { margin-left: 10px; }
+		.widget-table .dataTables_wrapper .dataTables_paginate { margin-right: 10px; }

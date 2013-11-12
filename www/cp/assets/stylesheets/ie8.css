@@ -1,0 +1,9 @@
+.widget-table .dataTables_wrapper .ui-corner-br.ui-corner-bl { color: #555; padding: 10px !important; }
+		
+.widget-table .dataTables_wrapper .dataTables_paginate { margin-right: 0; }
+
+#quickNav li.last { border-right: none; }
+
+#quickNav .alert { top: -6px; }
+
+.dashboard_report { width: 22.8%; }

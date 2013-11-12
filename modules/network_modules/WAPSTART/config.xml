@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href=""?>
+
+<networkplugin>
+    <name>WapStart</name>
+    <version>1.0</version>
+    <networkid>WAPSTART</networkid>
+    <signuplink>http://www.wapstart.ru/</signuplink>
+    <info_content><![CDATA[
+        <h3>Network Info</h3>WapStart is the owner of the largest mobile advertising network Plus1.WapStart and the most popular and complete mobile sites catalogue Top WapStart in Russia. WapStart services over 3000 mobile publishers with 1.1milliom unique visitors and 22million ad requests daily. Plus1 WapStart unique technology allows for detailed targeting and analysis of the visiting audience, resulting in the most relevant ads placement for increased ROI and monetization.<br><br><h3>Ad Formats</h3>WapStart supports both Banner Ads and Text Ads.<br><br><h3>Best Countries</h3>Russia and Ukraine
+    ]]></info_content>
+    <banner_support>1</banner_support>
+    <interstitial_support>0</interstitial_support>
+	<pub_ids>
+	<pubid>Site ID</pubid>
+	</pub_ids>
+</networkplugin>

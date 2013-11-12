@@ -1,0 +1,1630 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Canvas Admin Documentation</title>
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="./stylesheets/reset.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+	<link rel="stylesheet" href="./stylesheets/docs.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+	<link href="./stylesheets/tables.css" rel="stylesheet">	
+	<link href="../stylesheets/sprite.css" rel="stylesheet">	
+	<link href="./google-code-prettify/prettify.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="wrapper" class="xgrid">
+	
+	<div id="top"></div>
+	
+	<div id="header">		
+		<h1 id="title">
+			<a href="#top">Canvas Admin <span>Docs</span></a>
+			<a id="version" href="javascript:;">1.0</a>
+		</h1>		
+	</div>
+	
+	
+	<div id="nav">
+		<ul id="toc">
+
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div id="content">
+		
+		<section id="intro" data-title="Support">
+			
+			<h1>Support</h1>
+			
+			<p>Canvas Admin is a premium, full featured, responsive admin template that helps you get your project started quickly and with ease. Included are 20+ sample pages showcasing the many layouts and widgets you have at your disposal such as: buttons, grid layout, google maps, tooltips, and much more. </p>
+			
+			<p><a href="../index.html" target="_blank" class="demo">View Demo</a></p>
+			
+		</section>
+		
+
+
+
+
+
+		
+		
+		
+		
+		<section id="grid" data-title="Grid Layout">
+			
+			<h1>Grid Layout</h1>
+			
+			<h3>Container</h3>
+			
+<pre class="">&lt;div class="container"&gt;
+	-- Grid items go here --
+&lt;/div&gt;</pre>
+
+<br />
+
+			<h3>Grid System</h3>
+			
+			<p>This theme uses a 24 column fluid grid system for layout. Some valid layouts are listed below.</p>
+			
+<pre>&lt;div class="grid-24"&gt; -- Content goes here -- &lt;/div&gt;
+
+&lt;div class="grid-12"&gt; -- Content goes here -- &lt;/div&gt;
+&lt;div class="grid-12"&gt; -- Content goes here -- &lt;/div&gt;
+
+&lt;div class="grid-8"&gt; -- Content goes here -- &lt;/div&gt;
+&lt;div class="grid-8"&gt; -- Content goes here -- &lt;/div&gt;
+&lt;div class="grid-8"&gt; -- Content goes here -- &lt;/div&gt;
+
+&lt;div class="grid-6"&gt; -- Content goes here -- &lt;/div&gt;
+&lt;div class="grid-6"&gt; -- Content goes here -- &lt;/div&gt;
+&lt;div class="grid-6"&gt; -- Content goes here -- &lt;/div&gt;
+&lt;div class="grid-6"&gt; -- Content goes here -- &lt;/div&gt;
+
+&lt;div class="grid-16"&gt; -- Content goes here -- &lt;/div&gt;
+&lt;div class="grid-8"&gt; -- Content goes here -- &lt;/div&gt;</pre>
+
+<br />
+
+
+			<h3>Incorrect Column Layout</h3>
+			
+			
+
+<pre>&lt;div class="grid-16"&gt; -- Content goes here -- &lt;/div&gt;
+&lt;div class="grid-10"&gt; -- Content goes here -- &lt;/div&gt;</pre>
+
+
+<br />
+
+			<h3>Box Layout</h3>
+			
+			<p>You can use the box layout as a lightweight container to display content with default styling and margins.</p>
+		
+			<p><strong>Basic box with light gray background, inside padding, and margin bottom.</strong></p>	
+<pre>&lt;div class="box"&gt;
+	-- Content goes here --
+&lt;/div&gt;</pre>
+
+<br />
+			<p><strong>Box with no background and content flush to the edges of the container.</strong></p>	
+<pre>&lt;div class="box plain"&gt;
+	-- Content goes here --
+&lt;/div&gt;</pre>
+			
+		</section>
+		
+
+
+
+
+<section id="mainnav" data-title="Navigation">
+			
+			<h1>Navigation</h1>
+			
+			<h2>Main Navigation</h2>
+	
+			<h3>Container</h3>	
+			
+			<p><strong>Note:</strong> Be sure to include this menu right after the div with the id #search.</p>
+<pre>
+&lt;div id="sidebar"&gt;
+	&lt;ul id="mainNav"&gt;
+		-- Nav items go here --
+	&lt;/ul&gt;	
+&lt;/div&gt;
+</pre>
+
+
+<br />
+
+
+			<h3>Navigation Item</h3>
+<pre>&lt;li class="nav"&gt;
+	&lt;a href="./dashboard.html"&gt;Dashboard&lt;/a&gt;				
+&lt;/li&gt;
+</pre>
+
+
+<br />
+
+
+			<h3>Navigation Item w/ Icon</h3>
+<pre>&lt;li class="nav"&gt;
+	&lt;span class="icon-home"&gt;&lt;/span&gt;
+	&lt;a href="./dashboard.html"&gt;Dashboard&lt;/a&gt;				
+&lt;/li&gt;
+</pre>
+
+
+<br />
+
+
+			<h3>Sub Navigation</h3>
+			
+<pre>&lt;li class="nav"&gt;
+	&lt;a href="javascript:;"&gt;Sample Pages&lt;/a&gt;				
+	
+	&lt;ul class="subNav"&gt;
+		&lt;li&gt;&lt;a href="./invoice.html"&gt;Invoice&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="./support.html"&gt;Support&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="./people.html"&gt;People Directory&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;	
+&lt;/li&gt;</pre>
+
+
+
+<br />
+
+
+			<h3>Active State</h3>
+			
+<pre>&lt;li class="nav active"&gt;</pre>
+
+
+<br />			
+			
+			<h2>Quick Nav</h2>
+			
+			<p><strong>Note:</strong> It is best to include this towards the bottom of your html document.</p>
+			
+			<h3>Container</h3>
+<pre>&lt;div id="quickNav"&gt;
+	&lt;ul&gt;
+		-- Items go here --
+	&lt;/ul&gt;
+&lt;/div&gt;</pre>
+
+
+<br />
+
+
+			<h3>Adding Items</h3>
+			<p><strong>Note:</strong> Make sure the href attribute on line 2 matches that of the ID on your .menu-container.</p>
+			
+<pre>&lt;li&gt;
+	&lt;a href="#menuAmpersand" class="menu"&gt;
+		&lt;span class="icon-book"&gt;&lt;/span&gt;
+	&lt;/a&gt;		
+	
+	&lt;span class="alert"&gt;3&lt;/span&gt;		
+
+	&lt;div id="menuAmpersand" class="menu-container quickNavConfirm"&gt;
+		
+		&lt;div class="menu-content cf"&gt;
+		
+			-- Content goes here --
+			
+		&lt;/div&gt; &lt;!-- .menu-content --&gt;
+		
+	&lt;/div&gt; &lt;!-- .menu-container --&gt;	
+&lt;/li&gt;</pre>
+
+
+
+<br />
+			<h2>Top Nav</h2>
+			
+			<p><strong>Note:</strong> It is best to include this towards the bottom of your html document.</p>
+			
+			<h3>Container</h3>
+			
+<pre>&lt;div id="topNav"&gt;
+	&lt;ul&gt;
+		-- Items go here --
+	&lt;/ul&gt;
+&lt;/div&gt;</pre>
+
+
+<br />
+
+
+			<h3>Adding Items</h3>
+			
+			<p><strong>Note:</strong> Make sure the href attribute on line 2 matches that of the ID on your .menu-container.</p>
+<pre>&lt;li&gt;
+	&lt;a href="#menuProfile" class="menu"&gt;John Doe&lt;/a&gt;
+	
+	&lt;div id="menuProfile" class="menu-container menu-dropdown"&gt;
+		&lt;div class="menu-content"&gt;
+			&lt;ul&gt;
+				&lt;li&gt;&lt;a href="javascript:;"&gt;Edit Profile&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="javascript:;"&gt;Upgrade Account&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="javascript:;"&gt;Suspend Account&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/li&gt;</pre>
+		</section>
+
+		
+		
+		
+		
+		<section id="form" data-title="Form Layout">
+			
+			<h1>Form Layout</h1>
+			
+			<h2>Basic Form</h2>
+			
+			<h3>Container</h3>
+			
+<pre>&lt;form class="form"&gt;
+	
+&lt;/form&gt;</pre>
+
+<br />
+
+			<h3>Single Field</h3>
+			
+<pre>&lt;div class="field-group"&gt;
+	&lt;label for="fname"&gt;First Name:&lt;/label&gt;
+	
+	&lt;div class="field"&gt;
+		&lt;input type="text" name="fname" id="fname" size="10" class="" /&gt;	
+	&lt;/div&gt; &lt;!-- .field --&gt;
+&lt;/div&gt; &lt;!-- .field-group --&gt;</pre>			
+
+<br />
+			
+			
+			<h3>Multiple Fields</h3>
+			
+<pre>&lt;div class="field-group"&gt;
+	&lt;label&gt;Name:&lt;/label&gt;
+	
+	&lt;div class="field"&gt;
+		&lt;input type="text" name="fname" id="fname" size="10" class="" /&gt;			
+		&lt;label for="fname"&gt;First&lt;/label&gt;
+	&lt;/div&gt; &lt;!-- .field --&gt;
+	
+	&lt;div class="field"&gt;
+		&lt;input type="text" name="mname" id="mname" size="1" /&gt;			
+		&lt;label for="mname"&gt;Mi&lt;/label&gt;
+	&lt;/div&gt; &lt;!-- .field --&gt;
+	
+	&lt;div class="field"&gt;
+		&lt;input type="text" name="lname" id="lname" size="12" class="" /&gt;			
+		&lt;label for="lname"&gt;Last&lt;/label&gt;
+	&lt;/div&gt; &lt;!-- .field --&gt;
+&lt;/div&gt; &lt;!-- .field-group --&gt;</pre>
+
+
+
+
+<br />
+						
+			
+			
+			<h3>Radio / Checkbox</h3>
+			
+<pre>&lt;div class="field-group control-group"&gt;	
+	&lt;label&gt;Radio:&lt;/label&gt;	
+
+	&lt;div class="field"&gt;
+		&lt;input type="radio" name="radio" id="radio1" value="1" /&gt;
+		&lt;label for="radio1"&gt;Radio 1&lt;/label&gt;
+	&lt;/div&gt; &lt;!-- .field --&gt;
+
+	&lt;div class="field"&gt;
+		&lt;input type="radio" name="radio" id="radio2" value="2" /&gt;
+		&lt;label for="radio2"&gt;Radio 2&lt;/label&gt;
+	&lt;/div&gt; &lt;!-- .field --&gt;
+
+	&lt;div class="field"&gt;
+		&lt;input type="radio" name="radio" id="radio3" value="3" /&gt;
+		&lt;label for="radio3"&gt;Radio 3&lt;/label&gt;
+	&lt;/div&gt; &lt;!-- .field --&gt;	
+&lt;/div&gt;	</pre>
+
+
+<br />
+
+
+			<h3>File Input</h3>
+			
+<pre>&lt;div class="field-group"&gt;	
+	&lt;label for="myfile"&gt;File Input:&lt;/label&gt;
+
+	&lt;div class="field"&gt;
+		&lt;input type="file" name="myfile" id="myfile" /&gt;
+	&lt;/div&gt;	
+&lt;/div&gt;</pre>
+
+
+<br />
+
+			<h3>Select Field</h3>
+			
+<pre>&lt;div class="field-group"&gt;		
+	&lt;label&gt;Billing Information:&lt;/label&gt;
+
+	&lt;div class="field"&gt;
+		&lt;select name="cardtype" id="cardtype"&gt;
+			&lt;option&gt;Visa&lt;/option&gt;
+			&lt;option&gt;Master Card&lt;/option&gt;
+			&lt;option&gt;American Express&lt;/option&gt;
+			&lt;option&gt;Discover&lt;/option&gt;
+		&lt;/select&gt;
+		
+		&lt;label for="cardtype"&gt;Card Type&lt;/label&gt;
+	&lt;/div&gt;		
+&lt;/div&gt; &lt;!-- .field-group --&gt;</pre>
+
+
+			<h2>Uniform Plugin</h2>
+			
+			<p>To auto enable the Uniform plugin add the class .uniformForm to your main .form element.</p>
+			
+<pre>&lt;form class="form uniformForm"&gt;
+	
+&lt;/form&gt;</pre>
+			
+		</section>
+		
+		
+		
+		
+		
+		<section id="buttons" data-title="Buttons">
+			
+			<h1>Buttons</h1>
+			
+			<h3>Basic Button</h3>
+			
+			
+<pre>&lt;button class="btn"&gt;Button&lt;/button&gt;</pre>
+
+		<br />
+			
+			<h3>Button w/ Icon</h3>
+			
+			
+<pre>&lt;button class="btn"&gt;
+	&lt;span class="icon-home"&gt;&lt;/span&gt;
+	Button
+&lt;/button&gt;</pre>
+	
+<br />
+		
+			<h3>Sizes</h3>
+			
+			
+<pre>&lt;button class="btn btn-large"&gt;Button&lt;/button&gt;</pre>
+
+
+<table class="table table-striped">
+	
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Class</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td>Small</td>
+			<td>.btn-small</td>
+			<td>Small button</td>
+		</tr>
+		<tr>
+			<td>Regular</td>
+			<td>.btn</td>
+			<td>Regular button</td>
+		</tr>
+		<tr>
+			<td>Large</td>
+			<td>.btn-large</td>
+			<td>Large button</td>
+		</tr>
+		<tr>
+			<td>X-Large</td>
+			<td>.btn-xlarge</td>
+			<td>X-Large button</td>
+		</tr>
+	</tbody>
+</table>
+	
+
+		
+			<h3>Colors</h3>
+			
+			
+<pre>&lt;button class="btn btn-orange"&gt;Button&lt;/button&gt;</pre>
+
+
+			
+<table class="table table-striped">
+	
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Class</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td>Blue</td>
+			<td>.btn-blue</td>
+			<td>Blue button</td>
+		</tr>
+		<tr>
+			<td>Green</td>
+			<td>.btn-green</td>
+			<td>Green button</td>
+		</tr>
+		<tr>
+			<td>Orange</td>
+			<td>.btn-orange</td>
+			<td>Orange button</td>
+		</tr>
+		<tr>
+			<td>Black</td>
+			<td>.btn-black</td>
+			<td>Black button</td>
+		</tr>
+		<tr>
+			<td>Teal</td>
+			<td>.btn-teal</td>
+			<td>Teal button</td>
+		</tr>
+		<tr>
+			<td>Purple</td>
+			<td>.btn-purple</td>
+			<td>Purple button</td>
+		</tr>
+		<tr>
+			<td>Pink</td>
+			<td>.btn-pink</td>
+			<td>Pink button</td>
+		</tr>
+		<tr>
+			<td>Red</td>
+			<td>.btn-red</td>
+			<td>Red button</td>
+		</tr>
+		<tr>
+			<td>Gray</td>
+			<td>.btn-gray</td>
+			<td>Gray button</td>
+		</tr>
+	</tbody>
+</table>
+
+
+			<h3>Semantic Classes</h3>
+			
+			
+<pre>&lt;button class="btn btn-primary"&gt;Button&lt;/button&gt;</pre>
+
+
+<table class="table table-striped">
+	
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Class</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td>Primary</td>
+			<td>.btn-primary</td>
+			<td>Primary action</td>
+		</tr>
+		<tr>
+			<td>Secondary</td>
+			<td>.btn-secondary</td>
+			<td>Secondary action</td>
+		</tr>
+		<tr>
+			<td>Tertiary</td>
+			<td>.btn-tertiary</td>
+			<td>Tertiary action</td>
+		</tr>
+		<tr>
+			<td>Quaternary</td>
+			<td>.btn-quaternary</td>
+			<td>Quaternary action</td>
+		</tr>
+		<tr>
+			<td>Success</td>
+			<td>.btn-success</td>
+			<td>Succes action</td>
+		</tr>
+		<tr>
+			<td>Info</td>
+			<td>.btn-info</td>
+			<td>Info action</td>
+		</tr>
+		<tr>
+			<td>Warning</td>
+			<td>.btn-warning</td>
+			<td>Warning action</td>
+		</tr>
+		<tr>
+			<td>Error</td>
+			<td>.btn-error</td>
+			<td>Error action</td>
+		</tr>
+	</tbody>
+	
+</table>
+
+
+			<h3>Icon Classes</h3>
+			
+			<p>The available <a href="#icons" class="anchor">icon classes</a> are listed in this document <a href="#icons" class="anchor">below</a>.</p>
+		</section>
+		
+		
+		
+		
+		
+		<section id="tables" data-title="Tables">
+			
+			<h1>Tables</h1>
+			
+			<h3>Basic Table</h3>
+			
+			
+			<p>Converts an unstyled table into a basic styled data table.</p>
+			
+<pre>&lt;table class="table"&gt;
+	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Rendering engine&lt;/th&gt;
+			&lt;th&gt;Browser&lt;/th&gt;
+			&lt;th&gt;Platform(s)&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td&gt;Trident&lt;/td&gt;
+			&lt;td&gt;Internet Explorer 4.0&lt;/td&gt;
+			&lt;td&gt;Win 95+&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;Trident&lt;/td&gt;
+			&lt;td&gt;Internet Explorer 5.0&lt;/td&gt;
+			&lt;td&gt;Win 95+&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;</pre>
+
+
+<br />
+
+			
+			<h3>Striped Table</h3>
+			
+			
+			
+			<p>Add alternating row colors to your data table.</p>
+			
+<pre>&lt;table class="table table-striped"&gt;
+	
+&lt;/table&gt;
+</pre>
+
+
+<br />
+
+			
+			<h3>Bordered Table</h3>
+			
+			<p>Adds a full border around all table cells and headings. Also distinguishes the table header more.</p>
+			
+<pre>&lt;table class="table table-bordered"&gt;
+	
+&lt;/table&gt;	
+</pre>
+
+
+<br />
+
+			
+			<h3>Widget Table</h3>
+			
+			<p>Any table using the above classes for .table can be included within a widget. By adding the class .widget-table the default widget padding will be removed and the table will be flush against the container.
+			
+<pre>&lt;div class="widget widget-table"&gt;
+	
+&lt;/div&gt;
+</pre>
+			
+		</section>
+		
+		
+		
+		
+		
+		<section id="widget" data-title="Widget Layout">
+			
+			<h1>Widget Layout</h1>
+			
+			<h2>Basic Widget</h2>
+			
+			<h3>Example Widget</h3>
+			
+<pre>&lt;div class="widget"&gt;
+	&lt;div class="widget-header"&gt;	
+		&lt;h3&gt;Widget Title&lt;/h3&gt;
+	&lt;/div&gt;
+	
+	&lt;div class="widget-content"&gt;
+		-- All content goes here --
+	&lt;/div&gt;	
+&lt;/div&gt;	
+</pre>
+
+
+<br />
+			
+			
+			<h3>Container</h3>
+			
+<pre>&lt;div class="widget"&gt;
+	
+&lt;/div&gt;	
+</pre>
+
+
+<br />
+			
+			<h3>Widget Header w/ Icon</h3>
+			
+<pre>&lt;div class="widget-header"&gt;
+	&lt;span class="icon-home"&gt;&lt;/span&gt;
+	
+	&lt;h3&gt;Widget Title&lt;/h3&gt;
+&lt;/div&gt;	
+</pre>
+
+
+<br />
+			
+			<h3>Widget Content</h3>
+			
+<pre>&lt;div class="widget-content"&gt;
+	-- All content goes here --
+&lt;/div&gt;	
+</pre>
+
+<br />
+
+
+			<h2>Widget Tabs</h2>
+			
+			<h3>Container</h3>
+			
+			
+			<p>Make sure you include the class .widget-tabs on your .widget container. This is necessary for the events to be attached to your tab elements.</p>
+			
+<pre>&lt;div class="widget widget-tabs"&gt;
+
+&lt;/div&gt;</pre>
+
+
+<br />
+			<h3>Tabs Code</h3>	
+			
+			<p>Include the tabs code below in the .widget-header of your container. Make sure this is included after the title element.</p>
+					
+<pre>&lt;ul class="tabs right"&gt;	
+	&lt;li class="active"&gt;&lt;a href="#tab-1"&gt;Tab #1&lt;/a&gt;&lt;/li&gt;	
+	&lt;li class=""&gt;&lt;a href="#tab-2"&gt;Tab #2&lt;/a&gt;&lt;/li&gt;					
+	&lt;li class=""&gt;&lt;a href="#tab-3"&gt;Tab #3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+
+<br />
+
+
+<h3>Tab Content</h3>
+
+<p>When setting up your tab content containers make sure that the ID of the container corresponds to the href attribute of the tab element.</p>
+
+<pre>&lt;div id="tab-1" class="widget-content"&gt; --Content goes here-- &lt;/div&gt;
+&lt;div id="tab-2" class="widget-content"&gt; --Content goes here-- &lt;/div&gt;
+&lt;div id="tab-3" class="widget-content"&gt; --Content goes here-- &lt;/div&gt;</pre>
+
+<br />
+
+			<h2>Widget Calendar</h2>
+			
+
+	
+<h3>Container</h3>
+
+<p>To create a Widget Calendar add the following class to your widget container: .widget-calendar.</p>
+		
+<pre>&lt;div class="widget widget-calendar"&gt;
+	
+&lt;/div&gt;
+</pre>
+
+
+<h3>Content</h3>
+
+<p>In the .widget-content container add your calendar holder div as the only item.</p>
+
+<pre>&lt;div class="widget-content"&gt;
+	&lt;div id="calendar-holder"&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+
+<br />
+			
+			
+			<h2>Widget Tables</h2>
+			
+			<p>To create a Widget Table add the following class to your widget container: .widget-table</p>
+			
+			<p>For more info on how to style tables check out the <a href="#tables" class="anchor">documentation for tables above</a>.</p>
+			
+<pre>&lt;div class="widget widget-table"&gt;
+	
+&lt;/div&gt;
+</pre>
+
+			
+			
+
+		</section>
+		
+		
+		
+		
+		
+		<section id="interface" data-title="Interface Elements">
+			
+			<h1>Interface Elements</h1>
+			
+			<h2>Notify Messages</h2>
+			
+<pre>&lt;div class="notify notify-warning"&gt;						
+	&lt;a href="javascript:;" class="close"&gt;x&lt;/a&gt;
+	
+	&lt;h3&gt;Success Notifty&lt;/h3&gt;
+	
+	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.&lt;/p&gt;
+&lt;/div&gt;</pre>
+
+<br />
+
+<p><strong>Add the following classes to the .notify container to change the styling.</strong></p>
+
+
+<table class="table table-striped">
+	
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Class</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td>Default</td>
+			<td>.notify</td>
+			<td>Default notify message</td>
+		</tr>
+		<tr>
+			<td>Success</td>
+			<td>.notify-success</td>
+			<td>Success notify message (Green)</td>
+		</tr>
+		<tr>
+			<td>Warning</td>
+			<td>.notify-warning</td>
+			<td>Success notify message (Yellow)</td>
+		</tr>
+		<tr>
+			<td>Info</td>
+			<td>.notify-info</td>
+			<td>Info notify message (Blue)</td>
+		</tr>
+		<tr>
+			<td>Error</td>
+			<td>.notify-error</td>
+			<td>Error notify message (Red)</td>
+		</tr>
+	</tbody>
+	
+</table>
+			
+			
+			
+			
+			<h2>Progress Bars</h2>
+			
+			<p>To change the width bar size simply change the percentage listed on the .bar element.</p>
+			
+<pre class="">&lt;div class="progress-bar"&gt;
+	&lt;div class="bar" style="width: 35%;"&gt; --Bar Text-- &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+<br />
+
+<h4>Semantic Classes</h4>
+
+<table class="table table-striped">
+	
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Class</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td>Primary</td>
+			<td>.primary</td>
+			<td>Primary class</td>
+		</tr>
+		<tr>
+			<td>Secondary</td>
+			<td>.secondary</td>
+			<td>Secondary class</td>
+		</tr>
+		<tr>
+			<td>Tertiary</td>
+			<td>.tertiary</td>
+			<td>Tertiary class</td>
+		</tr>
+		<tr>
+			<td>Quaternary</td>
+			<td>.quaternary</td>
+			<td>Quaternary class</td>
+		</tr>
+	</tbody>
+	
+</table>
+
+<h4>Color Classes</h4>
+
+<table class="table table-striped">
+	
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Class</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td>Blue</td>
+			<td>.blue</td>
+			<td>Blue progress bar</td>
+		</tr>
+		<tr>
+			<td>Green</td>
+			<td>.green</td>
+			<td>Green progress bar</td>
+		</tr>
+		<tr>
+			<td>Orange</td>
+			<td>.orange</td>
+			<td>Orange progress bar</td>
+		</tr>
+		<tr>
+			<td>Black</td>
+			<td>.black</td>
+			<td>Black progress bar</td>
+		</tr>
+		<tr>
+			<td>Teal</td>
+			<td>.teal</td>
+			<td>Teal progress bar</td>
+		</tr>
+		<tr>
+			<td>Purple</td>
+			<td>.purple</td>
+			<td>Purple progress bar</td>
+		</tr>
+		<tr>
+			<td>Pink</td>
+			<td>.pink</td>
+			<td>Pink progress bar</td>
+		</tr>
+		<tr>
+			<td>Red</td>
+			<td>.red</td>
+			<td>Red progress bar</td>
+		</tr>
+		<tr>
+			<td>Gray</td>
+			<td>.gray</td>
+			<td>Gray progress bar</td>
+		</tr>
+	</tbody>
+</table>
+
+
+<h2>Tickets</h2>
+
+<pre>&lt;span class="ticket ticket-success"&gt;Success&lt;/span&gt;</pre>
+
+<br />
+
+<p><strong>Add the following classes to the .ticket container to change the styling.</strong></p>
+
+<table class="table table-striped">
+	
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Class</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td>Default</td>
+			<td>.ticket</td>
+			<td>Default ticket</td>
+		</tr>
+		<tr>
+			<td>Success</td>
+			<td>.ticket-success</td>
+			<td>Success ticket (Green)</td>
+		</tr>
+		<tr>
+			<td>Warning</td>
+			<td>.ticket-warning</td>
+			<td>Warning ticket (Yellow)</td>
+		</tr>
+		<tr>
+			<td>Error</td>
+			<td>.ticket-error</td>
+			<td>Error ticket (Red)</td>
+		</tr>
+		<tr>
+			<td>Info</td>
+			<td>.ticket-info</td>
+			<td>Info ticket (Blue)</td>
+		</tr>
+	</tbody>
+	
+</table>
+
+			<h2>Pagination</h2>
+			
+			<h3>Container</h3>
+			
+<pre>&lt;div class="pagination"&gt;
+	-- Pagination items go here --
+&lt;/div&gt;</pre>
+
+
+<br />
+
+<h3>Pagination Items</h3>
+<pre>&lt;a href="javascript:;" class="prev disabled"&gt;Previous&lt;/a&gt;
+	
+&lt;a href="javascript:;"&gt;1&lt;/a&gt;
+&lt;a href="javascript:;"&gt;2&lt;/a&gt;
+&lt;a href="javascript:;"&gt;3&lt;/a&gt;
+
+&lt;a href="javascript:;" class="next"&gt;Next&lt;/a&gt;</pre>
+
+<br />
+
+
+<h3>Selected Item</h3>
+
+<p>Add the class selected to the pagination item you want to have active.</p>
+
+<pre>&lt;a href="javascript:;" class="selected"&gt;1&lt;/a&gt;</pre>
+
+<br />
+
+<h3>Pagination Colors</h3>
+
+<p><strong>Add the color class to the .pagination container.</strong></p>
+
+<table class="table table-striped">
+	
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Class</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td>Blue</td>
+			<td>.blue</td>
+			<td>Blue pagination</td>
+		</tr>
+		<tr>
+			<td>Green</td>
+			<td>.green</td>
+			<td>Green pagination</td>
+		</tr>
+		<tr>
+			<td>Orange</td>
+			<td>.orange</td>
+			<td>Orange pagination</td>
+		</tr>
+		<tr>
+			<td>Black</td>
+			<td>.black</td>
+			<td>Black pagination</td>
+		</tr>
+		<tr>
+			<td>Teal</td>
+			<td>.teal</td>
+			<td>Teal pagination</td>
+		</tr>
+		<tr>
+			<td>Purple</td>
+			<td>.purple</td>
+			<td>Purple pagination</td>
+		</tr>
+		<tr>
+			<td>Pink</td>
+			<td>.pink</td>
+			<td>Pink pagination</td>
+		</tr>
+		<tr>
+			<td>Red</td>
+			<td>.red</td>
+			<td>Red pagination</td>
+		</tr>
+		<tr>
+			<td>Gray</td>
+			<td>.gray</td>
+			<td>Gray pagination</td>
+		</tr>
+	</tbody>
+</table>	
+
+
+
+<h2>Bullet List</h2>
+
+<h3>Container</h3>
+
+<pre>&lt;ul class="bullet bullet-blue"&gt;
+
+&lt;/ul&gt;</pre>
+
+<h3>Example List</h3>
+
+<pre>&lt;ul class="bullet bullet-blue"&gt;
+	&lt;li&gt;List Item&lt;/li&gt;
+	&lt;li&gt;List Item&lt;/li&gt;
+	&lt;li&gt;List Item&lt;/li&gt;
+	&lt;li&gt;List Item&lt;/li&gt;
+&lt;/ul&gt;</pre>
+
+<h3>Bullet Colors</h3>
+
+<table class="table table-striped">
+	
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Class</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td>Green</td>
+			<td>.bullet-green</td>
+			<td>Green bullet list</td>
+		</tr>
+		<tr>
+			<td>Red</td>
+			<td>.bullet-red</td>
+			<td>Red bullet list</td>
+		</tr>
+		<tr>
+			<td>Orange</td>
+			<td>.bullet-orange</td>
+			<td>Orange bullet list</td>
+		</tr>
+		<tr>
+			<td>Yellow</td>
+			<td>.bullet-yellow</td>
+			<td>Yellow bullet list</td>
+		</tr>
+		
+		<tr>
+			<td>Blue</td>
+			<td>.bullet-blue</td>
+			<td>Blue bullet list</td>
+		</tr>
+		<tr>
+			<td>Pink</td>
+			<td>.bullet-pink</td>
+			<td>Pink bullet list</td>
+		</tr>
+		
+		<tr>
+			<td>Black</td>
+			<td>.bullet-black</td>
+			<td>Black bullet list</td>
+		</tr>
+		<tr>
+			<td>Purple</td>
+			<td>.bullet-purple</td>
+			<td>Purple bullet list</td>
+		</tr>
+		<tr>
+			<td>White</td>
+			<td>.bullet-white</td>
+			<td>White bullet list</td>
+		</tr>
+		<tr>
+			<td>Gray</td>
+			<td>.bullet-gray</td>
+			<td>Gray bullet list</td>
+		</tr>
+	</tbody>
+</table>
+		
+		</section>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<section id="plugins" data-title="Plugins">
+			
+			<h1>Plugins</h1>
+			
+			<h2>Modal</h2>
+			
+			<h3>Javascript Call</h3>
+			
+<pre class="">$.modal ({ 
+	title: 'Modal'
+	, ajax: 'modal.php'
+});</pre>
+
+<br />
+
+<h3>Options</h3>
+
+<table class="table table-striped">
+	
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Value</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td>title</td>
+			<td>String</td>
+			<td>Optional title goes here.</td>
+		</tr>
+		<tr>
+			<td>html</td>
+			<td>String</td>
+			<td>Load content from an html source.</td>
+		</tr>
+		<tr>
+			<td>ajax</td>
+			<td>Resource Path</td>
+			<td>Path to the content you want to load on your server..</td>
+		</tr>
+		<tr>
+			<td>width</td>
+			<td>String</td>
+			<td>Optional width for your modal. If not provided the width is generated automatically.</td>
+		</tr>
+		<tr>
+			<td>overlay</td>
+			<td>Boolean</td>
+			<td>When set to true a the content of the page will be covered by a transparent div halting interaction until the alert is closed.</td>
+		</tr>
+		<tr>
+			<td>overlayClose</td>
+			<td>Boolean</td>
+			<td>When set to true clicking on an active overlay will close the alert.</td>
+		</tr>
+		<tr>
+			<td>escClose</td>
+			<td>Boolean</td>
+			<td>When set to true the modal will be closed when the user clicks the ESC key.</td>
+		</tr>
+	</tbody>
+		
+	
+</table>
+			
+
+			<h2>Alert</h2>
+			
+			<h3>Javascript Call</h3>
+
+<pre class="">$.alert ({ 
+	type: 'confirm'
+	, title: 'Alert'
+	, text: 'Lorem ipsum dolor sit amet, consectetur adipisicing.'
+	, callback: function () { 
+		alert ('Callback');
+	}	
+});</pre>	
+
+<br />
+
+<h3>Options</h3>
+
+<table class="table table-striped">
+	
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Value</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td>type</td>
+			<td>String</td>
+			<td>If set to confirm an alert is shown with accept/cancel buttons.</td>
+		</tr>
+		<tr>
+			<td>title</td>
+			<td>String</td>
+			<td>Optional title goes here.</td>
+		</tr>
+		<tr>
+			<td>text</td>
+			<td>Html</td>
+			<td>Text/html to display in the alert.</td>
+		</tr>
+		<tr>
+			<td>confirmText</td>
+			<td>String</td>
+			<td>Optional text that will replace the default for the confirmation action.</td>
+		</tr>
+		<tr>
+			<td>cancelText</td>
+			<td>Boolean</td>
+			<td>Optional text that will replace the default for the cancel action</td>
+		</tr>
+		<tr>
+			<td>callback</td>
+			<td>Function</td>
+			<td>Callback function to be executed when an affirmative button is clicked..</td>
+		</tr>
+		<tr>
+			<td>overlayClose</td>
+			<td>Boolean</td>
+			<td>When set to true clicking on an active overlay will close the alert.</td>
+		</tr>
+		<tr>
+			<td>escClose</td>
+			<td>Boolean</td>
+			<td>When set to true the modal will be closed when the user clicks the ESC key.</td>
+		</tr>
+	</tbody>
+		
+	
+</table>	
+
+
+<h2>Full Calendar</h2>
+
+<p>FullCalendar is a jQuery plugin that provides a full-sized, drag & drop calendar like the one below. It uses AJAX to fetch events on-the-fly for each month and is easily configured to use your own feed format (an extension is provided for Google Calendar).</p>
+
+<p><a href="http://arshaw.com/fullcalendar/docs/" class="view_doc" target="_blank">View Calendar Documentation</a></p>
+
+
+<br />
+
+
+<h2>Visualize Charts</h2>
+
+<p>The plugin provides a simple method for generating bar, line, area, and pie charts from an HTML table, and allows you to configure them in a variety of ways.</p>
+
+<p><a href="https://github.com/irae/jquery-visualize" class="view_doc" target="_blank">View Visualize Charts Documentation</a></p>
+
+<h3>Chart Helper</h3>
+
+<pre>&lt;table class="stats" data-chart-type="bar"&gt;</pre>
+
+<h4>Options</h4>
+
+<table class="table table-striped">
+	
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Value</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td>type</td>
+			<td>String</td>
+			<td>Sets the type of chart to be displayed. Potential values are (pie, bar, line, area)</td>
+		</tr>
+	</tbody>
+</table>
+
+
+
+
+
+<br />
+
+
+<h2>Data Tables</h2>
+
+<p>DataTables is a plug-in for the jQuery Javascript library. It is a highly flexible tool, based upon the foundations of progressive enhancement, which will add advanced interaction controls to any HTML table.</p>
+
+<h3>Helper</h3>
+
+<p>To use the helper simply add the classes .data-table to any table you want to have the Data Table functionality on.</p>
+
+<pre>&lt;table class="data-table"&gt;
+	
+&lt;/table&gt;</pre>
+
+<br />
+
+<h3>Documentation</h3>
+<p><a href="http://datatables.net/" class="view_doc" target="_blank">View Data Tables Documentation</a></p>
+
+
+
+
+
+
+<br />
+
+
+<h2>Tipsy</h2>
+
+<p>Tipsy is a jQuery plugin for creating a Facebook-like tooltips effect based on an anchor tag's title attribute.</p>
+
+
+<h3>Helper</h3>
+
+<p>Add the class tooltip to any element where you want a tooltip. Also make sure you set the title attribute to the text you want to display.</p>
+
+<pre>&lt;button class="tooltip" title="This is the tooltip to display"&gt;&lt;/button&gt;</pre>
+
+<br />
+
+<h3>Documenation</h3>
+
+<p><a href="http://onehackoranother.com/projects/jquery/tipsy/">View Documentation</a></p>
+
+
+<br />
+
+			<h2>Google Maps</h2>
+			
+			<h3>Basic Setup</h3>
+			
+			<p>Include the following container anywhere in your document.</p>
+				
+				<p> <strong>Note:</strong> When inserting a blank div into the document be sure to add a width & height on that div or include the following class .map-canvas on your container.</p>
+			
+<pre>&lt;div id="basic-canvas" class="map-canvas"&gt;
+	
+&lt;/div&gt;</pre>
+		
+<br />
+
+<p>Below is a basic plugin call to initialize a Google Map. For more configuration options check the documentation below or the <a href="../maps.html" target="_blank">example page for maps</a></p>
+	
+<pre>$('#basic-canvas').googleMaps();</pre>
+			
+<br />
+			<h3>Documentation</h3>
+			
+			<p><a href="http://www.mayzes.org/googlemaps.jquery.html" target="_blank">View Documenation</a></p>
+			
+			<br />
+			
+			</section>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<section id="icons" data-title="Icons">
+			
+			<h1>Icons</h1>
+			
+			<h3>Example</h3>
+			
+<pre>&lt;span class="icon-home"&gt;&lt;/span&gt;</pre>
+			
+<br />
+
+			<h3>Icon Classes</h3>
+			
+			<div class="icons-container"><div class="icons-holder"><span class="icon-ampersand"></span>.icon-ampersand</div><div class="icons-holder"><span class="icon-aperture"></span>.icon-aperture</div><div class="icons-holder"><span class="icon-aperture-alt"></span>.icon-aperture-alt</div><div class="icons-holder"><span class="icon-arrow-down"></span>.icon-arrow-down</div><div class="icons-holder"><span class="icon-arrow-down-alt1"></span>.icon-arrow-down-alt1</div><div class="icons-holder"><span class="icon-arrow-down-alt2"></span>.icon-arrow-down-alt2</div><div class="icons-holder"><span class="icon-arrow-left"></span>.icon-arrow-left</div><div class="icons-holder"><span class="icon-arrow-left-alt1"></span>.icon-arrow-left-alt1</div><div class="icons-holder"><span class="icon-arrow-left-alt2"></span>.icon-arrow-left-alt2</div><div class="icons-holder"><span class="icon-arrow-right"></span>.icon-arrow-right</div><div class="icons-holder"><span class="icon-arrow-right-alt1"></span>.icon-arrow-right-alt1</div><div class="icons-holder"><span class="icon-arrow-right-alt2"></span>.icon-arrow-right-alt2</div><div class="icons-holder"><span class="icon-arrow-up"></span>.icon-arrow-up</div><div class="icons-holder"><span class="icon-arrow-up-alt1"></span>.icon-arrow-up-alt1</div><div class="icons-holder"><span class="icon-arrow-up-alt2"></span>.icon-arrow-up-alt2</div><div class="icons-holder"><span class="icon-article"></span>.icon-article</div><div class="icons-holder"><span class="icon-at"></span>.icon-at</div><div class="icons-holder"><span class="icon-award-fill"></span>.icon-award-fill</div><div class="icons-holder"><span class="icon-award-stroke"></span>.icon-award-stroke</div><div class="icons-holder"><span class="icon-bars"></span>.icon-bars</div><div class="icons-holder"><span class="icon-bars-alt"></span>.icon-bars-alt</div><div class="icons-holder"><span class="icon-battery-charging"></span>.icon-battery-charging</div><div class="icons-holder"><span class="icon-battery-empty"></span>.icon-battery-empty</div><div class="icons-holder"><span class="icon-battery-full"></span>.icon-battery-full</div><div class="icons-holder"><span class="icon-battery-half"></span>.icon-battery-half</div><div class="icons-holder"><span class="icon-beaker"></span>.icon-beaker</div><div class="icons-holder"><span class="icon-beaker-alt"></span>.icon-beaker-alt</div><div class="icons-holder"><span class="icon-bolt"></span>.icon-bolt</div><div class="icons-holder"><span class="icon-book"></span>.icon-book</div><div class="icons-holder"><span class="icon-book-alt"></span>.icon-book-alt</div><div class="icons-holder"><span class="icon-box"></span>.icon-box</div><div class="icons-holder"><span class="icon-brush"></span>.icon-brush</div><div class="icons-holder"><span class="icon-brush-alt"></span>.icon-brush-alt</div><div class="icons-holder"><span class="icon-calendar"></span>.icon-calendar</div><div class="icons-holder"><span class="icon-calendar-alt-fill"></span>.icon-calendar-alt-fill</div><div class="icons-holder"><span class="icon-calendar-alt-stroke"></span>.icon-calendar-alt-stroke</div><div class="icons-holder"><span class="icon-camera"></span>.icon-camera</div><div class="icons-holder"><span class="icon-cd"></span>.icon-cd</div><div class="icons-holder"><span class="icon-chart"></span>.icon-chart</div><div class="icons-holder"><span class="icon-chart-alt"></span>.icon-chart-alt</div><div class="icons-holder"><span class="icon-chat"></span>.icon-chat</div><div class="icons-holder"><span class="icon-chat-alt-fill"></span>.icon-chat-alt-fill</div><div class="icons-holder"><span class="icon-chat-alt-stroke"></span>.icon-chat-alt-stroke</div><div class="icons-holder"><span class="icon-check"></span>.icon-check</div><div class="icons-holder"><span class="icon-check-alt"></span>.icon-check-alt</div><div class="icons-holder"><span class="icon-clock"></span>.icon-clock</div><div class="icons-holder"><span class="icon-cloud"></span>.icon-cloud</div><div class="icons-holder"><span class="icon-cloud-download"></span>.icon-cloud-download</div><div class="icons-holder"><span class="icon-cloud-upload"></span>.icon-cloud-upload</div><div class="icons-holder"><span class="icon-cog"></span>.icon-cog</div><div class="icons-holder"><span class="icon-cog-alt"></span>.icon-cog-alt</div><div class="icons-holder"><span class="icon-comment-alt1-fill"></span>.icon-comment-alt1-fill</div><div class="icons-holder"><span class="icon-comment-alt1-stroke"></span>.icon-comment-alt1-stroke</div><div class="icons-holder"><span class="icon-comment-alt2-fill"></span>.icon-comment-alt2-fill</div><div class="icons-holder"><span class="icon-comment-alt2-stroke"></span>.icon-comment-alt2-stroke</div><div class="icons-holder"><span class="icon-comment-alt3-fill"></span>.icon-comment-alt3-fill</div><div class="icons-holder"><span class="icon-comment-alt3-stroke"></span>.icon-comment-alt3-stroke</div><div class="icons-holder"><span class="icon-comment-fill"></span>.icon-comment-fill</div><div class="icons-holder"><span class="icon-comment-stroke"></span>.icon-comment-stroke</div><div class="icons-holder"><span class="icon-compass"></span>.icon-compass</div><div class="icons-holder"><span class="icon-cursor"></span>.icon-cursor</div><div class="icons-holder"><span class="icon-curved-arrow"></span>.icon-curved-arrow</div><div class="icons-holder"><span class="icon-denied"></span>.icon-denied</div><div class="icons-holder"><span class="icon-denied-alt"></span>.icon-denied-alt</div><div class="icons-holder"><span class="icon-dial"></span>.icon-dial</div><div class="icons-holder"><span class="icon-document-alt-fill"></span>.icon-document-alt-fill</div><div class="icons-holder"><span class="icon-document-alt-stroke"></span>.icon-document-alt-stroke</div><div class="icons-holder"><span class="icon-document-fill"></span>.icon-document-fill</div><div class="icons-holder"><span class="icon-document-stroke"></span>.icon-document-stroke</div><div class="icons-holder"><span class="icon-download"></span>.icon-download</div><div class="icons-holder"><span class="icon-eject"></span>.icon-eject</div><div class="icons-holder"><span class="icon-equalizer"></span>.icon-equalizer</div><div class="icons-holder"><span class="icon-eye"></span>.icon-eye</div><div class="icons-holder"><span class="icon-eyedropper"></span>.icon-eyedropper</div><div class="icons-holder"><span class="icon-first"></span>.icon-first</div><div class="icons-holder"><span class="icon-folder-fill"></span>.icon-folder-fill</div><div class="icons-holder"><span class="icon-folder-stroke"></span>.icon-folder-stroke</div><div class="icons-holder"><span class="icon-fork"></span>.icon-fork</div><div class="icons-holder"><span class="icon-fullscreen"></span>.icon-fullscreen</div><div class="icons-holder"><span class="icon-fullscreen-alt"></span>.icon-fullscreen-alt</div><div class="icons-holder"><span class="icon-fullscreen-exit"></span>.icon-fullscreen-exit</div><div class="icons-holder"><span class="icon-fullscreen-exit-alt"></span>.icon-fullscreen-exit-alt</div><div class="icons-holder"><span class="icon-hash"></span>.icon-hash</div><div class="icons-holder"><span class="icon-headphones"></span>.icon-headphones</div><div class="icons-holder"><span class="icon-heart-fill"></span>.icon-heart-fill</div><div class="icons-holder"><span class="icon-heart-stroke"></span>.icon-heart-stroke</div><div class="icons-holder"><span class="icon-home"></span>.icon-home</div><div class="icons-holder"><span class="icon-image"></span>.icon-image</div><div class="icons-holder"><span class="icon-info"></span>.icon-info</div><div class="icons-holder"><span class="icon-iphone"></span>.icon-iphone</div><div class="icons-holder"><span class="icon-key-fill"></span>.icon-key-fill</div><div class="icons-holder"><span class="icon-key-stroke"></span>.icon-key-stroke</div><div class="icons-holder"><span class="icon-last"></span>.icon-last</div><div class="icons-holder"><span class="icon-layers"></span>.icon-layers</div><div class="icons-holder"><span class="icon-layers-alt"></span>.icon-layers-alt</div><div class="icons-holder"><span class="icon-left-quote"></span>.icon-left-quote</div><div class="icons-holder"><span class="icon-left-quote-alt"></span>.icon-left-quote-alt</div><div class="icons-holder"><span class="icon-lightbulb"></span>.icon-lightbulb</div><div class="icons-holder"><span class="icon-link"></span>.icon-link</div><div class="icons-holder"><span class="icon-list"></span>.icon-list</div><div class="icons-holder"><span class="icon-lock-fill"></span>.icon-lock-fill</div><div class="icons-holder"><span class="icon-lock-stroke"></span>.icon-lock-stroke</div><div class="icons-holder"><span class="icon-loop"></span>.icon-loop</div><div class="icons-holder"><span class="icon-loop-alt1"></span>.icon-loop-alt1</div><div class="icons-holder"><span class="icon-loop-alt2"></span>.icon-loop-alt2</div><div class="icons-holder"><span class="icon-loop-alt3"></span>.icon-loop-alt3</div><div class="icons-holder"><span class="icon-loop-alt4"></span>.icon-loop-alt4</div><div class="icons-holder"><span class="icon-magnifying-glass"></span>.icon-magnifying-glass</div><div class="icons-holder"><span class="icon-magnifying-glass-alt"></span>.icon-magnifying-glass-alt</div><div class="icons-holder"><span class="icon-mail"></span>.icon-mail</div><div class="icons-holder"><span class="icon-mail-alt"></span>.icon-mail-alt</div><div class="icons-holder"><span class="icon-map-pin-alt"></span>.icon-map-pin-alt</div><div class="icons-holder"><span class="icon-map-pin-fill"></span>.icon-map-pin-fill</div><div class="icons-holder"><span class="icon-map-pin-stroke"></span>.icon-map-pin-stroke</div><div class="icons-holder"><span class="icon-mic"></span>.icon-mic</div><div class="icons-holder"><span class="icon-minus"></span>.icon-minus</div><div class="icons-holder"><span class="icon-minus-alt"></span>.icon-minus-alt</div><div class="icons-holder"><span class="icon-moon-fill"></span>.icon-moon-fill</div><div class="icons-holder"><span class="icon-moon-stroke"></span>.icon-moon-stroke</div><div class="icons-holder"><span class="icon-move"></span>.icon-move</div><div class="icons-holder"><span class="icon-move-alt1"></span>.icon-move-alt1</div><div class="icons-holder"><span class="icon-move-alt2"></span>.icon-move-alt2</div><div class="icons-holder"><span class="icon-move-horizontal"></span>.icon-move-horizontal</div><div class="icons-holder"><span class="icon-move-horizontal-alt1"></span>.icon-move-horizontal-alt1</div><div class="icons-holder"><span class="icon-move-horizontal-alt2"></span>.icon-move-horizontal-alt2</div><div class="icons-holder"><span class="icon-move-vertical"></span>.icon-move-vertical</div><div class="icons-holder"><span class="icon-move-vertical-alt1"></span>.icon-move-vertical-alt1</div><div class="icons-holder"><span class="icon-move-vertical-alt2"></span>.icon-move-vertical-alt2</div><div class="icons-holder"><span class="icon-movie"></span>.icon-movie</div><div class="icons-holder"><span class="icon-new-window"></span>.icon-new-window</div><div class="icons-holder"><span class="icon-pause"></span>.icon-pause</div><div class="icons-holder"><span class="icon-pen"></span>.icon-pen</div><div class="icons-holder"><span class="icon-pen-alt2"></span>.icon-pen-alt2</div><div class="icons-holder"><span class="icon-pen-alt-fill"></span>.icon-pen-alt-fill</div><div class="icons-holder"><span class="icon-pen-alt-stroke"></span>.icon-pen-alt-stroke</div><div class="icons-holder"><span class="icon-pilcrow"></span>.icon-pilcrow</div><div class="icons-holder"><span class="icon-pin"></span>.icon-pin</div><div class="icons-holder"><span class="icon-play"></span>.icon-play</div><div class="icons-holder"><span class="icon-play-alt"></span>.icon-play-alt</div><div class="icons-holder"><span class="icon-plus"></span>.icon-plus</div><div class="icons-holder"><span class="icon-plus-alt"></span>.icon-plus-alt</div><div class="icons-holder"><span class="icon-question-mark"></span>.icon-question-mark</div><div class="icons-holder"><span class="icon-rain"></span>.icon-rain</div><div class="icons-holder"><span class="icon-read-more"></span>.icon-read-more</div><div class="icons-holder"><span class="icon-reload"></span>.icon-reload</div><div class="icons-holder"><span class="icon-reload-alt1"></span>.icon-reload-alt1</div><div class="icons-holder"><span class="icon-right-quote"></span>.icon-right-quote</div><div class="icons-holder"><span class="icon-right-quote-alt"></span>.icon-right-quote-alt</div><div class="icons-holder"><span class="icon-rss"></span>.icon-rss</div><div class="icons-holder"><span class="icon-rss-alt"></span>.icon-rss-alt</div><div class="icons-holder"><span class="icon-share"></span>.icon-share</div><div class="icons-holder"><span class="icon-spin"></span>.icon-spin</div><div class="icons-holder"><span class="icon-spin-alt"></span>.icon-spin-alt</div><div class="icons-holder"><span class="icon-star"></span>.icon-star</div><div class="icons-holder"><span class="icon-steering-wheel"></span>.icon-steering-wheel</div><div class="icons-holder"><span class="icon-stop"></span>.icon-stop</div><div class="icons-holder"><span class="icon-sun"></span>.icon-sun</div><div class="icons-holder"><span class="icon-sun-alt-fill"></span>.icon-sun-alt-fill</div><div class="icons-holder"><span class="icon-sun-alt-stroke"></span>.icon-sun-alt-stroke</div><div class="icons-holder"><span class="icon-tag-fill"></span>.icon-tag-fill</div><div class="icons-holder"><span class="icon-tag-stroke"></span>.icon-tag-stroke</div><div class="icons-holder"><span class="icon-target"></span>.icon-target</div><div class="icons-holder"><span class="icon-transfer"></span>.icon-transfer</div><div class="icons-holder"><span class="icon-trash-fill"></span>.icon-trash-fill</div><div class="icons-holder"><span class="icon-trash-stroke"></span>.icon-trash-stroke</div><div class="icons-holder"><span class="icon-umbrella"></span>.icon-umbrella</div><div class="icons-holder"><span class="icon-undo"></span>.icon-undo</div><div class="icons-holder"><span class="icon-unlock-fill"></span>.icon-unlock-fill</div><div class="icons-holder"><span class="icon-unlock-stroke"></span>.icon-unlock-stroke</div><div class="icons-holder"><span class="icon-upload"></span>.icon-upload</div><div class="icons-holder"><span class="icon-user"></span>.icon-user</div><div class="icons-holder"><span class="icon-volume"></span>.icon-volume</div><div class="icons-holder"><span class="icon-volume-mute"></span>.icon-volume-mute</div><div class="icons-holder"><span class="icon-wrench"></span>.icon-wrench</div><div class="icons-holder"><span class="icon-x"></span>.icon-x</div><div class="icons-holder"><span class="icon-x-alt"></span>.icon-x-alt</div></div>
+			
+		</section>
+		
+		
+		
+	</div>
+	
+	
+	
+	
+	
+
+
+
+</div> <!-- #wrapper -->
+<script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="./google-code-prettify/prettify.js"></script>
+<script src="./javascripts/jquery.scrollTo.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+	
+$(document).ready ( function () {
+	
+	var counter = 0;
+	var html = '';
+	
+	$('#content section').each ( function () {		
+		counter++;
+		
+		var section = $(this)
+			, title = section.find ('h1')
+			, text = ''
+			, subcount = 0
+			, subsection = section.find ('h2')
+			, subsection_array = []
+			, subtoc = ''
+			, slug = ''
+			, slug_array = [];
+			
+		subsection.each (function () {
+			subcount++;
+			text = $(this).text ();
+			slug = text.replace (' ', '-');
+			slug = slug.toLowerCase ();
+			
+			
+			text = counter + '.' + subcount + ' ' + text;
+			$(this).text (text).attr ('id', slug);
+			subsection_array.push (text + '_' + slug);
+		});
+		
+		if (subsection_array.length > 0) {
+			var splitted = '';
+			subtoc += '<ul class="sub-toc">';
+			for (var i=0, j=subsection_array.length; i<j; i++) {
+				splitted = subsection_array[i].split ('_');
+				
+				subtoc += '<li><a href="#' + splitted[1] + '" class="anchor">' + splitted[0] + '</a></li>';
+			}
+			subtoc += '</ul>';
+			
+			title.after (subtoc);
+		}
+			
+		text = counter + '. ' + section.attr ('data-title');		
+		title.text (text);		
+		html += '<li><a href="#' + section.attr ('id') + '">' + text + '</a></li>';
+	});
+	
+	$('#toc').append (html);
+	
+	$('#toc a:first').attr ('href' , '#top');
+	
+	$('pre').addClass ('prettyprint linenums');
+	prettyPrint();
+	
+	
+	setTimeout (function () {
+		
+		var activeTarget,
+      position = {},
+      $window = $(window),
+      nav = $('#toc a, .anchor'),
+      targets = nav.map(function () {
+        return $(this).attr('href');
+      }),
+      offsets = $.map(targets, function (id) {
+        return $(id).offset().top;
+      });
+
+
+  function setButton(id) {
+    nav.parent("li").removeClass('active');
+    $(nav[$.inArray(id, targets)]).parent("li").addClass('active');
+  }
+
+  function processScroll(e) {
+    var scrollTop = $window.scrollTop() + 40, i;
+    for (i = offsets.length; i--;) {
+      if (activeTarget != targets[i] && scrollTop >= offsets[i] && (!offsets[i + 1] || scrollTop <= offsets[i + 1])) {
+        activeTarget = targets[i];
+        setButton(activeTarget);
+      }
+    }
+  }
+
+  nav.click(function (e) {
+  	e.preventDefault ();
+  	$.scrollTo ( $(this).attr ('href') , 1000 );
+    processScroll();
+  });
+
+  processScroll();
+
+  $window.scroll(processScroll);
+		
+		
+	}, 1000);
+	
+	
+});
+</script>
+</body></html>

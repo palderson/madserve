@@ -1,0 +1,66 @@
+.qnc {
+	width: 300px;
+	margin-top: 15px;
+}
+			
+	.qnc_item {
+		width: 100%;
+		display: block;
+		margin-bottom: 0;
+		border-bottom: 1px dotted #BBB;
+		float: left;
+	}
+	
+	.qnc .qnc_item {
+		padding: 10px 0;
+	}
+	
+	.qnc .qnc_content {
+		width: 100%;
+		float: left;
+	}
+	
+	.qnc .qnc_actions { display: none; }
+	
+	.qnc .qnc_item:hover { background-color: #EEE; text-decoration: none; }
+	
+	
+	.qnc .qnc_title
+	, .qnc .qnc_preview
+	, .qnc .qnc_time {
+		display: block;
+		padding: 0 10px;
+	}
+	
+	.qnc .qnc_title { font-weight: 600; color: #06C; }
+	.qnc .qnc_preview { color: #333; }
+	.qnc .qnc_time { color: #AAA; }
+	
+	
+	.qnc.qnc_confirm .qnc_item:hover { background-color: transparent; cursor: default; }
+	
+	.qnc.qnc_confirm .qnc_content { width: 185px; margin-right: 20px; }
+	
+	.qnc.qnc_confirm .qnc_actions {
+		width: 80px;
+		text-align: right;
+		display: block;
+		padding-top: 3px;
+		float: left;
+	}
+	
+		.qnc.qnc_confirm .qnc_actions button { margin-right: .5em; margin-bottom: 1em; }
+		.qnc.qnc_confirm .qnc_actions button:last-child { margin-right: 0; margin-bottom: 0; }
+		
+		
+	.qnc .qnc_more {
+		font-weight: bold;
+		text-align: center;
+		display: block;
+		padding: 10px 0;
+		margin-top: .5em;
+		margin-top: -10px;
+		clear: both;
+	}
+	
+		.qnc .qnc_more:hover { background-color: #DDD; text-decoration: none; }

@@ -1,0 +1,62 @@
+/* ---------------------------------- */
+/* @Basic Table */
+	
+
+.table { width: 100%; border: 0; margin-bottom: 1em; border-collapse: collapse;  }
+
+ .table thead th
+ {
+ 	font-size: 12px;
+	font-weight: bold;
+	text-align: left;
+
+	color: #333;
+	padding: 10px 10px;
+	
+	border-bottom: 1px solid #E3E3E3;
+	
+}	
+
+.table td { vertical-align: top; }
+
+.table tbody tr td { background: #FFF; border-bottom: 1px solid #E3E3E3; }
+
+.table tbody td { padding: 10px; }
+
+		
+	
+/* ---------------------------------- */
+/* @Striped Table */
+			
+.table-striped tr:nth-child(odd) td { background-color: #FAFAFA; }
+.table-striped tr:nth-child(even) td { background-color: #FFF; }
+
+
+
+/* ---------------------------------- */
+/* @Bordered Table */
+		
+.table-bordered {
+	border-top: 1px solid #E3E3E3;
+	border-left: 1px solid #E3E3E3;				
+}
+
+.table-bordered thead tr { 
+	background: #EEE;
+	background:-moz-linear-gradient(top, #FFFFFF 0%, #EEEEEE 100%); /* FF3.6+ */
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#EEEEEE)); /* Chrome,Safari4+ */
+	background:-webkit-linear-gradient(top, #FFFFFF 0%,#EEEEEE 100%); /* Chrome10+,Safari5.1+ */
+	background:-o-linear-gradient(top, #FFFFFF 0%,#EEEEEE 100%); /* Opera11.10+ */
+	background:-ms-linear-gradient(top, #FFFFFF 0%,#EEEEEE 100%); /* IE10+ */
+	background:linear-gradient(top, #FFFFFF 0%,#EEEEEE 100%); /* W3C */	
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#EEEEEE');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFF', endColorstr='#EEEEEE')";
+}
+
+.table-bordered tbody td
+, .table-bordered thead th {
+	border-right: 1px solid #E3E3E3;
+	border-bottom: 1px solid #E3E3E3;
+}
+
+

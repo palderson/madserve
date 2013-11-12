@@ -1,0 +1,176 @@
+
+
+
+
+.btn.block { display: block; margin-bottom: .75em; }
+
+
+
+
+
+/* ---------------------------------- */
+/* @Data Table Ovverides */
+
+.paging_full_numbers span.paginate_button
+, .paging_full_numbers span.paginate_active {
+	font-size: 11px;
+	padding: 0 5px;
+}
+
+.paging_full_numbers span.paginate_active {	
+	font-size: 11px;
+	color: #FFF;
+}
+
+.paginate_button
+, .paginate_active { display: inline-block; }
+
+.dataTables_info { width: 31%; }
+.dataTaebles_paginate { width: 67%; }
+
+.sorting_asc {
+	background: url('../images/dataTables/sort_asc.png') no-repeat center right;
+}
+
+.sorting_desc {
+	background: url('../images/dataTables/sort_desc.png') no-repeat center right;
+}
+
+.sorting {
+	background: url('../images/dataTables/sort_both.png') no-repeat center right;
+}
+
+.sorting_asc_disabled {
+	background: url('../images/dataTables/sort_asc_disabled.png') no-repeat center right;
+}
+
+.sorting_desc_disabled {
+	background: url('../images/dataTables/sort_desc_disabled.png') no-repeat center right;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------- */
+/* @Full Calendar Overrides */
+.ui-datepicker td 
+, .ui-datepicker th
+, .ui-datepicker-month
+, .ui-datepicker-year 
+, .ui-timepicker td 
+, .ui-timepicker th { font-size: 11px; }
+
+
+	
+/* ---------------------------------- */
+/* @Color Picker */
+
+.colorpicker { z-index: 25; }
+
+#colorSelector {
+	position: relative;
+	width: 26px;
+	height: 26px;
+	background: url(../images/colorpicker/select.png);
+	display: inline-block;
+	vertical-align: top;
+	cursor: pointer;
+	top: 2px;
+}
+		
+		
+#colorSelector div {
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 20px;
+	height: 20px;
+	background: url(../images/colorpicker/select.png) center;
+}
+
+
+/* ---------------------------------- */
+/* @Data Holders */
+
+.chart-holder {
+	width: 100%;
+	min-height: 225px;
+}
+.map-canvas { 
+	width: 100%;
+	height: 350px;	
+}
+
+.map-canvas img {
+	max-width: none;
+}
+
+.chart-canvas { width: 100%; height: 350px; }
+
+
+
+
+
+
+
+/* ---------------------------------- */
+/* @Overlay */
+	
+#overlay {
+	background: black;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 95;
+	opacity: .5;
+	filter: alpha(opacity=50);
+}
+
+
+
+
+/* ---------------------------------- */
+/* @Close Element */
+	
+.close {
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 18px;
+	color: #000000;
+	
+	float: right;
+	
+	text-shadow: 0 1px 0 #ffffff;
+	
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+
+.close:hover {
+	text-decoration: none;
+	color: #000000;
+	
+	opacity: 0.85;
+	filter: alpha(opacity=85);
+	
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href=""?>
+
+<networkplugin>
+    <name>MobFox</name>
+    <version>1.0</version>
+    <networkid>MOBFOX</networkid>
+    <signuplink>http://www.mobfox.com/signup</signuplink>
+    <info_content><![CDATA[
+        <h3>Network Info</h3>MobFox is a Premium and Performance Network focusing on global traffic on iOS, Android and Mobile Web.<br><br><h3>Ad Formats</h3>Through mAdserve, MobFox supports both standard banner ads as well as Interstitials and Video Advertising.<br><br><h3>Best Countries</h3>United States, United Kingdom, Austria, Germany, Switzerland, France, Italy, Australia, Canada, Ireland
+    ]]></info_content>
+    <banner_support>1</banner_support>
+    <interstitial_support>1</interstitial_support>
+	<pub_ids>
+	<pubid>Publisher ID</pubid>
+	</pub_ids>
+</networkplugin>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href=""?>
+
+<networkplugin>
+    <name>Admoda</name>
+    <version>1.0</version>
+    <networkid>ADMODA</networkid>
+    <signuplink>http://www.admoda.com/admin/register/publisher/new</signuplink>
+    <info_content><![CDATA[
+        <h3>Network Info</h3>Admoda is all about traffic – buying and selling traffic. The aim of Admoda is to allow advertisers to run highly targeted campaigns on the mobile internet and in apps, and for publishers to monetise their mobile sites and apps with advertising..<br><br><h3>Ad Formats</h3>Admoda support standard in-app and mobile web banners.<br><br><h3>Best Countries</h3>United Kingdom ]]></info_content>
+    <banner_support>1</banner_support>
+    <interstitial_support>0</interstitial_support>
+	<pub_ids>
+	<pubid>Zone ID</pubid>
+	</pub_ids>
+</networkplugin>

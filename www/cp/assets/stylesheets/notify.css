@@ -1,0 +1,35 @@
+/* ---------------------------------- */
+/* @Notify */
+	
+.notify {
+	background: #EEE;
+	padding: 15px;
+	margin-bottom: 1.5em;
+	border: 1px solid #DDD;
+	position: relative;
+	
+	border-radius: 5px;
+	
+	box-shadow: 1px 1px 1px rgba(0,0,0,.15);
+}
+
+	.notify p:last-child
+	, .notify ul:last-child { margin-bottom: 0; }
+
+
+/* ---------------------------------- */
+/* @Close */
+		
+.notify .close {
+	position: absolute;
+	top: 6px;
+	right: 12px;
+}
+	
+/* ---------------------------------- */
+/* @Types */
+	
+.notify-success { background-color: #dff0d8; color: #468847; border-color: #d6e9c6; }
+.notify-warning { background-color: #fcf8e3; color: #c09853; border-color: #fbeed5; }
+.notify-error { background-color: #f2dede; color: #b94a48; border-color: #eed3d7; }
+.notify-info { background-color: #d9edf7; color: #3a87ad; border-color: #bce8f1; }

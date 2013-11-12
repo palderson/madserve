@@ -1,0 +1,19 @@
+.widget-codeview .widget-content { padding: 0; }
+
+.widget-codeview .SRC_Line:nth-child(odd) {
+background-color: #F9F9F9;
+}
+
+.widget-codeview .SRC_Wrap {
+	border: none;
+	margin: 0;
+}
+
+.widget-codeview .SRC_NumContent { color: #666; }
+
+.widget-codeview .SRC_CodeContent { border-color: #DDD; }
+
+.widget-codeview pre.source { margin: 0; }
+
+.widget-codeview .SRC_Line { height: 28px; line-height: 28px; }
+.widget-codeview .SRC_CodeContent { height: 28px; line-height: 28px; }

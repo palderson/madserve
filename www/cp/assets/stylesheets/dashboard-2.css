@@ -1,0 +1,145 @@
+#gettingStarted {
+	background-color: #FDF5D9;
+	border-color: #FCEEC1;
+}
+
+#gettingStarted ul {
+	margin-top: 1.5em;
+}
+
+#gettingStarted p {
+	font-style: italic;
+	margin-bottom: .5em;
+}
+
+
+.taskList {
+	margin-bottom: 1em;
+}
+
+
+#activityStreamForm { padding-bottom: 1em; margin-bottom: 2em; border-bottom: 1px dotted #CCC; }
+	#activityStreamForm h3 { color: #555; margin-bottom: .5em; }
+	#activityStreamForm textarea { padding: 8px 1%; width: 98%; }
+
+	#activityStreamFormActions { text-align: right; margin-top: .75em; }
+		#activityStreamFormActions button { margin-right: 0; }
+
+
+.activityStreamRow { padding: 0 0 20px 0; margin-bottom: 20px; border-bottom: 1px dotted #CCC; }
+.activityStreamRow:first-child { padding-top: 0; }
+
+.activityStreamRow td { font-size: 13px; color: #555; vertical-align: top; }
+
+.activityStreamAvatarTd { width: 65px; }
+
+.activityStreamAvatarTd img { width: 45px; padding: 2px; border: 1px solid #CCC; }
+
+
+.activityStreamWho { font-size: 13px; color: #888; margin-bottom: .5em; }
+.activityStreamWho a { font-size: 13px; font-weight: bold }
+
+
+.streamShare { float: right; width: 48%; text-align: right; }
+.streamTypes { color: #888; float: left; width: 48%; text-align: left; margin-top: 2px; }
+
+.streamTypes a {
+	background: url(../images/stream/aperture_16x16.png) no-repeat 0 0;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	line-height: 600px;
+	overflow: hidden;
+	margin: 0 .25em;
+	position: relative;
+	top: 4px;
+}
+
+.streamTypes a:first-child { margin-left: .5em; }
+
+.streamTypes .streamTypeFile {
+	background-image: url(../images/stream/aperture_16x16.png);
+}
+
+.streamTypes .streamTypeLink {
+	background-image: url(../images/stream/link_16x16.png);
+}
+
+.streamTypes .streamTypePoll {
+	background-image: url(../images/stream/chart_16x16.png);
+}
+
+.activityStreamActions { font-size: 12px; margin-top: .5em; margin-bottom: .75em; }
+	.activityStreamActions a { color: #888; }
+
+.activityStreamComments { background: #DDD; min-height: 80px; }
+
+.streamAnswer {
+	background: url(../images/stream/quote.png) no-repeat 0 3px;
+	padding-left: 24px;
+	margin-top: 1.5em;
+}
+
+.streamFile {
+	background: url(../images/stream/list_16x14.png) no-repeat 0 3px;
+	font-size: 11px;
+	color: #666;
+	padding-left: 24px;
+	margin-top: 1.5em;
+}
+
+	.streamFile a { font-size: 13px; }
+
+.streamImage {
+	display: inline-block;
+
+	margin-top: 1em;
+	margin-bottom: .5em;
+}
+
+	.streamImage img { padding: 2px; border: 1px solid #CCC; }
+
+
+
+
+.taskList { margin: 0; }
+.taskList li { list-style-type: none; margin-bottom: 1em; cursor: pointer; }
+.taskList input { position: relative; top: 2px; margin-right: .25em; }
+
+.taskList li.completed { color: #888; text-decoration: line-through; }
+
+ul.projectMembersList {
+
+	padding: 0;
+	margin: 0;
+}
+
+ul.projectMembersList li {
+	display: inline-block;
+	margin-right: .25em;
+	vertical-align: top;
+}
+
+ul.projectMembersList img {
+	width: 32px;
+	padding: 2px;
+	border: 1px solid #CCC;
+}
+
+.projectMemberAdd {
+	background-color: #DDD;
+	width: 38px;
+	height: 38px;
+	font-size: 32px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 34px;
+	color: #06C;
+	display: block;
+
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+	.projectMemberAdd:hover { background-color: #06C; color: #FFF; text-decoration: none; }

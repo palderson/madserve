@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href=""?>
+
+<networkplugin>
+    <name>Smaato</name>
+    <version>1.0</version>
+    <networkid>SMAATO</networkid>
+    <signuplink>http://www.smaato.com/</signuplink>
+    <info_content><![CDATA[
+        <h3>Network Info</h3>Smaato provides Ads for Apps – operating the leading mobile advertising optimization platform called SOMA. More than 50,000 app developers and premium publishers have signed up with Smaato to monetize their content in 230+ countries with advanced realtime optimization features (RTB) and rich media ad formats.<br><br><h3>Ad Formats</h3>Mojiva supports both Banner Ads, Text Ads and Rich Media Ads.<br><br><h3>Best Countries</h3>International
+    ]]></info_content>
+    <banner_support>1</banner_support>
+    <interstitial_support>1</interstitial_support>
+	<pub_ids>
+	<pubid>AdSpace ID</pubid>
+	<pubid>Publisher ID</pubid>
+	</pub_ids>
+</networkplugin>

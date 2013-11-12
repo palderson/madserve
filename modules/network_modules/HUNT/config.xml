@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href=""?>
+
+<networkplugin>
+    <name>HUNT Mobile Ads</name>
+    <version>1.0</version>
+    <networkid>HUNT</networkid>
+    <signuplink>http://www.huntmads.com/</signuplink>
+    <info_content><![CDATA[
+        <h3>Network Info</h3>HUNT is the first mobile advertising network targeted to Spanish-speaking market, including all of Latin American and the U.S. Hispanic market, and offers solutions to discover, build brands and capitalize on the mobile Internet sector.<br><br><h3>Ad Formats</h3>HUNT supports both Banner Ads, Text Ads and Rich Media Ads.<br><br><h3>Best Countries</h3>All Spanish Speaking Countries, Latin America and U.S. Hispanic
+    ]]></info_content>
+    <banner_support>1</banner_support>
+    <interstitial_support>0</interstitial_support>
+	<pub_ids>
+	<pubid>Zone ID</pubid>
+	</pub_ids>
+</networkplugin>

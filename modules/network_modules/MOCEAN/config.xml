@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href=""?>
+
+<networkplugin>
+    <name>Mocean</name>
+    <version>1.0</version>
+    <networkid>MOCEAN</networkid>
+    <signuplink>http://www.moceanmobile.com/</signuplink>
+    <info_content><![CDATA[
+        <h3>Network Info</h3>Mocean Mobile offers publishers, mobile ad networks and app stores an industry-leading, easy-to-use platform to maximize mobile revenue. Its integration with mobile rich media providers allows sales teams to sell cutting-edge, higher CPM mobile advertising campaigns and ad ops teams to traffic and report activity in a matter of clicks. Integrated with over 70 third party mediation partners, Mocean Mobile ensures any unsold inventory is generating revenue. <br><br><h3>Ad Formats</h3>Mocean supports both Banner Ads, Text Ads and Rich Media Ads.<br><br><h3>Best Countries</h3>Various
+    ]]></info_content>
+    <banner_support>1</banner_support>
+    <interstitial_support>0</interstitial_support>
+	<pub_ids>
+	<pubid>Zone ID</pubid>
+	</pub_ids>
+</networkplugin>

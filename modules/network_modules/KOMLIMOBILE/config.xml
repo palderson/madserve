@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href=""?>
+
+<networkplugin>
+    <name>Komli Mobile (ZestAdz)</name>
+    <version>1.0</version>
+    <networkid>KOMLIMOBILE</networkid>
+    <signuplink>http://reg.komlimobile.com/registration/register</signuplink>
+    <info_content><![CDATA[
+        <h3>Network Info</h3>Komli Mobile is a leading global mobile advertising network and is a part of Komli Media - A global ad network with 13 international offices with 400 employees.<br><br><h3>Ad Formats</h3>Komli Mobile supports standard Banners as well as Text Ads.<br><br><h3>Best Countries</h3>Asia and Middle East
+    ]]></info_content>
+    <banner_support>1</banner_support>
+    <interstitial_support>0</interstitial_support>
+	<pub_ids>
+	<pubid>Site ID</pubid>
+	</pub_ids>
+</networkplugin>

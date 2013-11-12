@@ -1,0 +1,38 @@
+.form { margin-bottom: 1em; }
+
+
+/* ---------------------------------- */
+/* @Label */
+
+.form .field-group label { font-size: 13px; font-weight: 600; color: #444; display: block; margin-bottom: .25em; }
+
+
+/* ---------------------------------- */
+/* @Field */
+
+.form .field-group .field { font-size: 14px; display: inline-block; margin: 0 .65em 1.5em 0; }
+	.form .field-group .field label { font-size: 11px; font-weight: normal; color: #888; display: block; margin: 0 0 0 2px; }
+
+.form fieldset .field-group:last-child .field { margin-bottom: 0; }
+
+
+/* ---------------------------------- */
+/* @Controls */
+
+.form .control-group { margin-bottom: 2em; }
+.form .control-group .field { display: block; margin-bottom: .5em; margin-right: 2em; }
+.form .control-group .field label { font-size: 13px; color: #444; display: inline-block; cursor: pointer; }
+.form .control-group input { position: relative; top: 2px; cursor: pointer; }
+.form .field-group.inline .field { display: inline-block; margin-bottom: .5em; }
+
+
+
+
+
+.form fieldset { 
+	margin-bottom: 4em; 
+	
+	
+}
+
+.form fieldset+.actions { margin-top: -3em; }

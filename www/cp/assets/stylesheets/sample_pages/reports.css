@@ -1,0 +1,57 @@
+#big_stats 
+{ 
+	width: 100%; 
+	display: table;
+	margin-top: .5em;
+	margin-bottom: 1em;
+}
+
+.stat
+{
+	width: 25%;
+	height: 90px;
+	text-align: center;
+	display: table-cell;
+	padding: 0;
+	position: relative;
+}
+
+.stat h4
+{
+	font-size: 11px;
+	font-weight: bold;
+	color: #777;
+	margin-bottom: 1.5em;
+}
+
+.stat .value
+{
+	font-size: 46px;
+	font-weight: bold;
+	color: #111;
+	line-height: 1em;
+}
+
+
+
+@media all and (max-width: 950px) and (min-width: 1px) {
+	
+	#big_stats {
+		display: block;
+		margin-bottom: -40px;
+	}
+	
+	.stat {
+		width: 45%;
+		display: block;
+		margin-bottom: 3em;
+		float: left;
+	}	
+	
+}
+
+@media (max-width: 767px) {
+	.stat .value {
+		font-size: 40px;
+	}
+}

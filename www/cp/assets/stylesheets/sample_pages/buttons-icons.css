@@ -1,0 +1,31 @@
+.btn { margin-right: 1em; margin-bottom: 1.5em; }
+	
+	.icons-container .icons-holder {
+		width: 33%;
+		display: inline-block;
+		list-style-type: none;
+		padding: 0 0 1em; 
+		vertical-align: baseline;
+	}
+	
+	.icons-container span {
+	
+		margin-right: 1em;
+		
+		position: relative;
+		top: 4px;
+	}
+	
+	@media all and (max-width: 1024px) and (min-width: 481px) {
+	
+		.icons-container .icons-holder {
+			width: 49%;
+		}
+		
+	}
+	
+	@media (max-width: 480px) {
+		.icons-container .icons-holder {
+			width: 100%;
+		}
+	}

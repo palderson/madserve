@@ -1,0 +1,64 @@
+body.error-page {
+	background: #E9E9E9;	
+	margin: 0;
+}
+
+
+/* ---------------------------------- */
+/* @Error Wrapper */
+	
+#error-wrapper {
+	width: 80%;
+	max-width: 500px;
+	height: 350px;
+	text-align: center;
+	
+	margin: 0 auto;
+}
+
+#error-wrapper h1 {
+	font-size: 120px;
+	margin-bottom: .75em;
+}
+
+
+/* ---------------------------------- */
+/* @Error Code */
+	
+#error-code {
+	font-size: 32px;
+	font-weight: 600;
+	margin-bottom: .5em;
+}
+
+
+/* ---------------------------------- */
+/* @Error Message */
+	
+#error-message {
+	font-size: 15px;
+	margin-bottom: 2em;
+}
+
+
+/* ---------------------------------- */
+/* @Error header*/
+	
+#error-header {
+	background: #333;
+	width: 100%;
+	padding: 9px 0 2px 0;
+	margin-bottom: 4em;
+}
+
+#error-header a {
+	background: url(../images/logo_small.png) no-repeat 0 0;
+	width: 146px;
+	height: 31px;
+	line-height: 600px;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	left: 10px;
+	overflow: hidden;
+}

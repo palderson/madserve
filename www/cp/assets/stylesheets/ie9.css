@@ -1,0 +1,19 @@
+.progress-bar { border-radius: 0; }
+  	
+.progress-bar .bar { border-radius: 0; }
+
+.btn { border-radius: 0; }
+
+.dashboard_report { border-radius: 0; }
+
+.pagination a { border-radius: 0; }
+
+.widget-table .dataTables_wrapper .ui-buttonset .ui-button { border-radius: 0; }
+
+#modalHeader { border-radius: 0; }
+
+.widget-table .dataTables_wrapper .dataTables_paginate {
+	padding-right: 15px;
+}
+
+#quickNav .alert ( z-index: 5000; )

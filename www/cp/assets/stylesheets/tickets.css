@@ -1,0 +1,26 @@
+/* ---------------------------------- */
+/* @Ticket */
+	
+.ticket {
+	background-color: #999999;
+	font-size: 11px;
+	font-weight: 600;
+	color: #FFF;
+	
+	padding: 3px 8px;
+	margin-bottom: 1em;
+	
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+/* ---------------------------------- */
+/* @Ticket Types */
+	
+.ticket-important { background-color: #C70505; }
+.ticket-warning { background-color: #FF9A03; }
+.ticket-success { background-color: #5E8A26; }
+.ticket-info { background-color: #0B71CE; }

@@ -1,0 +1,74 @@
+	/* -------------------------------------------------------------- 
+   Invoice Page
+-------------------------------------------------------------- */			
+#invoice { }
+	
+#invoice h1 { margin-bottom: 1.25em; }
+#invoice .total,
+#invoice .price { text-align: right; }
+
+#invoice .sub_total,
+#invoice .grand_total { text-align: right; border-bottom: none; }
+
+#invoice .sub_total { border-top: 2px solid #666; }
+#invoice .grand_total { font-size: 14px; font-weight: bold; }
+
+#invoice .total_bar td { background: transparent; }
+
+#invoice .client_details,
+#invoice .invoice_details { font-size: 11px; padding: 0; margin: 0 0 3em; float: left; }
+
+	#invoice .invoice_details { float: right; }
+	#invoice .client_details li,
+	#invoice .invoice_details li { list-style-type: none; }
+	
+#invoice .name { font-size: 14px; }
+
+#invoice_actions { padding: 0; margin-top: 2em; margin-left: 0; }
+#invoice_actions li { list-style-type: none; margin-bottom: 1.25em; }
+#invoice_actions li a
+{
+	padding-left: 30px;
+}
+
+#invoice_actions .send { background: url(../../images/silk/email.png) no-repeat 0 center; }
+#invoice_actions .edit { background: url(../../images/silk/pencil.png) no-repeat 0 center; }
+#invoice_actions .print { background: url(../../images/silk/printer.png) no-repeat 0 center; }
+#invoice_actions .duplicate { background: url(../../images/silk/page_white_copy.png) no-repeat 0 center; }
+#invoice_actions .delete { background: url(../../images/silk/cross.png) no-repeat 0 center; }
+#invoice_actions .change { background: url(../../images/silk/page_white_go.png) no-repeat 0 center; }
+
+#invoice_total
+{
+	background: #A6CB7A;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	color: #FFF;
+	padding: 20px 15px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin-bottom: .75em;
+	
+	text-shadow: 1px 1px 2px rgba(0,0,0,.35);
+}
+
+/* -------------------------------------------------------------- 
+   Tickets
+-------------------------------------------------------------- */
+.ticket {
+	background-color: #06C;
+	padding: 3px 8px;
+	text-align: right;
+	color: #fff;
+	font-size: 10px;
+	display: inline;
+	white-space: nowrap;
+	width: 60px;
+	margin-left: .5em;
+	
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}

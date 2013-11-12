@@ -1,0 +1,97 @@
+.widget-calendar .widget-content { padding: 0; }
+
+.widget-calendar .fc-sun { border-left: none; }
+		.widget-calendar .fc-sat { border-right: none; }
+		.widget-calendar tr:last-child td { border-bottom: none; }
+		
+		.widget-calendar td { border-color: #DDD; }
+		
+		
+		.widget-calendar .fc-button-month
+		, .widget-calendar .fc-button-basicWeek
+		, .widget-calendar .fc-button-basicDay {
+			position: relative;
+			top: -52px;
+			right: 10px;
+		}
+		.widget-calendar .fc-day-number { font-size: 11px; }
+		
+		.widget-calendar .widget-content {
+			margin-top: 1em;
+		}
+		
+		.widget-calendar .fc-button-next {
+			background: transparent;
+			position: absolute;	
+			top: 57px;		
+			right: 10px;
+		}
+		
+		.widget-calendar .fc-button-prev {
+			background: transparent;
+			position: absolute;
+			top: 57px;
+			left: 10px;
+		}
+		
+		.widget-calendar .fc-button-effect
+		, .widget-calendar .fc-button-effect {
+			display: none;
+		}
+		
+		.widget-calendar .fc-state-default .fc-button-inner
+		, .widget-calendar .fc-state-default .fc-button-inner {
+			background: transparent;
+			border: none;
+		}
+		
+		.widget-calendar .fc-state-active {
+			background: #FFF;
+		}
+		
+		.widget-calendar .fc-state-active .fc-button-content {
+			color: #06C;
+		}
+		
+		.widget-calendar .fc-state-default
+		, .widget-calendar .fc-state-default {
+			border: none;
+		}
+		
+		.widget-calendar .fc-button-next.fc-state-default .fc-button-content
+		, .widget-calendar .fc-button-prev.fc-state-default .fc-button-content {
+			opacity: .35;
+		}
+		
+		
+		.widget-calendar .fc-widget-header { background: #F7F7F7; }
+		
+		.widget-calendar .fc-header-right .fc-button.fc-state-default {
+			background: transparent;
+			height: 40px;
+			line-height: 40px;
+			padding: 0 10px;
+			
+			border-left: 1px solid #D7D7D7;
+		}
+		
+		.widget-calendar .fc-header-right .fc-button.fc-state-default:last-child {
+			border-right: 1px solid #D7D7D7;
+		}
+		
+		.widget-calendar .fc-header-right .fc-button.fc-state-active {
+			background: #FFF;
+			font-weight: bold;
+			border-right: 1px solid #D7D7D7;
+		}
+		
+		.widget-calendar .fc-header-right .fc-button.fc-state-default .fc-button-inner {
+			position: relative;
+			top: 10px;
+		}
+		
+		.widget-calendar .fc-content {
+			top: -10px;
+		}
+		
+		.widget-calendar .fc-header-title h2 { position: relative; top: 2px; }
