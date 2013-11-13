@@ -18,39 +18,40 @@ require_once MAD_PATH . '/www/cp/admin_functions.php';
 require_once MAD_PATH . '/www/cp/templates/header.tpl.php';
 
 if (!check_permission('campaigns', $user_detail['user_id'])){
-exit;
+    exit;
 }
 
 if (isset ($_GET['action']) && $_GET['action']==1 && isset($_POST['select_campaign']) && is_array($_POST['select_campaign'])){
-$selected_items = $_POST['select_campaign'];
-	
-foreach ($selected_items as $item_id) {
-	
-switch ($_POST['form_action']){
+    $selected_items = $_POST['select_campaign'];
 
-case 'Pause':
-pause_campaign($item_id);
-break;	
+    foreach ($selected_items as $item_id) {
 
-case 'Run':
-run_campaign($item_id);
-break;	
+        switch ($_POST['form_action']){
 
-case 'Delete':
-delete_campaign($item_id);
-break;	
+        case 'Pause':
+            pause_campaign($item_id);
+            break;	
 
-	
-}
+        case 'Run':
+            run_campaign($item_id);
+            break;	
 
-}
+        case 'Delete':
+            delete_campaign($item_id);
+            break;	
 
-global $successmessage;
-$successmessage='Your campaigns have successfully been updated.';
-	
+
+        }
+
+    }
+
+    global $successmessage;
+    $successmessage='Your campaigns have successfully been updated.';
+
 }
 
 ?>
+
 <script type="text/javascript" language="javascript">
 function SetAction(x) {
 var answer = confirm("Are you sure you want to "+x+" the selected campaigns?")

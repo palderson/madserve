@@ -15,7 +15,7 @@ require_once MAD_PATH . '/www/cp/admin_functions.php';
 
 
 if (!check_permission('campaigns', $user_detail['user_id'])){
-exit;
+    exit;
 }
 
 global $current_action;
@@ -26,20 +26,20 @@ $page_desc='create_adunit';
 
 if (isset($_POST['add'])){
 
-if (do_create('ad_unit', $_POST, '') && is_numeric($_GET['id'])){
-global $added;
-$added=1;
-MAD_Admin_Redirect::redirect('view_adunits.php?id='.$_GET['id'].'&added=1');	
-}
-else
-{
-global $added;
-$added=2;
-}
+    if (do_create('ad_unit', $_POST, '') && is_numeric($_GET['id'])){
+        global $added;
+        $added=1;
+        MAD_Admin_Redirect::redirect('view_adunits.php?id='.$_GET['id'].'&added=1');	
+    }
+    else
+    {
+        global $added;
+        $added=2;
+    }
 }
 
 $campaign_detail=get_campaign_detail($_GET['id']);
-
+$available_locations = get_locations_details();
 
 
 require_once MAD_PATH . '/www/cp/templates/header.tpl.php';

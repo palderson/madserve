@@ -1,23 +1,35 @@
- <script language="javascript">
- function creative_type(status){
-	
-	if (status=="upload"){
-$("#creative_type_upload").attr("checked", "true");
-document.getElementById('creative_url_div').style.display='none'; document.getElementById('html_div').style.display='none'; document.getElementById('creative_upload_div').style.display='block'; document.getElementById('creative_upload_div').style.display='block'; document.getElementById('click_url_div').style.display='block';
-	}
-	
-	if (status=="external"){
-$("#creative_type_url").attr("checked", "true");
-document.getElementById('creative_upload_div').style.display='none'; document.getElementById('html_div').style.display='none'; document.getElementById('creative_url_div').style.display='block'; document.getElementById('creative_upload_div').style.display='block'; document.getElementById('creative_upload_div').style.display='none'; document.getElementById('click_url_div').style.display='block';	}
-	
-	if (status=="html"){
-$("#creative_type_html").attr("checked", "true");
-document.getElementById('creative_upload_div').style.display='none'; document.getElementById('creative_url_div').style.display='none';  document.getElementById('click_url_div').style.display='none'; document.getElementById('html_div').style.display='block';	}
-	
+<script language="javascript">
+function creative_type(status){
 
+    if (status=="upload"){
+        $("#creative_type_upload").attr("checked", "true");
+        document.getElementById('creative_url_div').style.display='none'; 
+        document.getElementById('html_div').style.display='none'; 
+        document.getElementById('creative_upload_div').style.display='block';
+        document.getElementById('creative_upload_div').style.display='block';
+        document.getElementById('click_url_div').style.display='block';
+    }
+
+    if (status=="external"){
+        $("#creative_type_url").attr("checked", "true");
+        document.getElementById('creative_upload_div').style.display='none'; 
+        document.getElementById('html_div').style.display='none'; 
+        document.getElementById('creative_url_div').style.display='block'; 
+        document.getElementById('creative_upload_div').style.display='block'; 
+        document.getElementById('creative_upload_div').style.display='none'; 
+        document.getElementById('click_url_div').style.display='block';	
+    }
+
+    if (status=="html"){
+        $("#creative_type_html").attr("checked", "true");
+        document.getElementById('creative_upload_div').style.display='none'; 
+        document.getElementById('creative_url_div').style.display='none';  
+        document.getElementById('click_url_div').style.display='none'; 
+        document.getElementById('html_div').style.display='block';	
+    }
 }
 
- </script>
+</script>
  <div id="create_adunit" class="widget">
 						
 						<div class="widget-header">
@@ -135,6 +147,62 @@ document.getElementById('creative_upload_div').style.display='none'; document.ge
 										<input type="file" name="creative_file" id="creative_file" />
 									</div>	
 								</div>
+<div class="field-group">
+
+<strong>Locations</strong>
+<hr/>
+
+<?php 
+
+$i = 0;
+$available_locations_count = sizeof($available_locations);
+
+$html = '';
+
+if($available_locations_count==0){
+    $html = 'No locations found. <a href="view_locations.php">Click here to add new Locations</a>';
+}
+
+
+for($i=0;$i<$available_locations_count;){
+
+    $html .= '<div class="field-group">';
+
+    for($j=$i;$j<$i+3 && $j<$available_locations_count; $j++){
+        $location_id = $available_locations[$j]['adv_location_id'];
+        $location_name = $available_locations[$j]['adv_location_name'];
+
+        $location_checked_status = '';
+        $location_radius_textfield_attrib = ' disabled="disabled" ';
+
+        if( isset($editdata['selected_locations']) && in_array($location_id, $editdata['selected_locations']) ){
+            $location_checked_status = 'checked="checked"';
+            $location_radius_textfield_attrib =  ' value="'.$editdata["location_radius_$location_id"].'" ';
+        }
+
+        $html .= <<< HTML
+<div class="field">
+    <label>
+        <input type="checkbox" name="selected_locations[]" value="$location_id" onchange="if(this.checked){var textField = document.getElementById('location_radius_$location_id'); textField.disabled=false; textField.value=''; textField.focus()} else { var textField = document.getElementById('location_radius_$location_id'); textField.disabled=true; textField.value=''}" $location_checked_status/>
+        $location_name
+    </label>
+    <label>
+        Radius in kms.
+        <input type="text" id="location_radius_$location_id" name="location_radius_$location_id" size="3" $location_radius_textfield_attrib/>
+    </label>
+</div>
+HTML;
+} 
+
+    $html .= '</div>';
+
+    $i = $j; 
+}
+
+echo $html
+
+?>
+</div>
 							
 						</div> <!-- .widget-content -->
 						

@@ -15,38 +15,45 @@ require_once MAD_PATH . '/www/cp/admin_functions.php';
 
 
 if (!check_permission('campaigns', $user_detail['user_id'])){
-exit;
+    exit;
 }
 
 global $current_action;
 $current_action='edit';
 
 if (isset($_POST['update'])){
-if (do_edit('adunit', $_POST, $_GET['id'])){
-global $edited;
-$edited=1;
-MAD_Admin_Redirect::redirect('edit_ad_unit.php?edited=1&id='.$_GET['id'].'');	
-}
-else
-{
-global $edited;
-$edited=2;
-}
+    if (do_edit('adunit', $_POST, $_GET['id'])){
+        global $edited;
+        $edited=1;
+        MAD_Admin_Redirect::redirect('edit_ad_unit.php?edited=1&id='.$_GET['id'].'');	
+    }
+    else
+    {
+        global $edited;
+        $edited=2;
+    }
 }
 
 
 if ($edited!=2){
-$editdata=get_adunit_detail($_GET['id']);
-$editdata['creative_type']=$editdata['adv_type'];
-$editdata['custom_creative_width']=$editdata['adv_width'];
-$editdata['custom_creative_height']=$editdata['adv_height'];
-$editdata['click_url']=$editdata['adv_click_url'];
-$editdata['tracking_pixel']=$editdata['adv_impression_tracking_url'];
-$editdata['creative_url']=$editdata['adv_bannerurl'];
-$editdata['html_body']=$editdata['adv_chtml'];
+    $editdata=get_adunit_detail($_GET['id']);
+    $editdata['creative_type']=$editdata['adv_type'];
+    $editdata['custom_creative_width']=$editdata['adv_width'];
+    $editdata['custom_creative_height']=$editdata['adv_height'];
+    $editdata['click_url']=$editdata['adv_click_url'];
+    $editdata['tracking_pixel']=$editdata['adv_impression_tracking_url'];
+    $editdata['creative_url']=$editdata['adv_bannerurl'];
+    $editdata['html_body']=$editdata['adv_chtml'];
+	
+    $selectedLocations= get_ad_locations($_GET['id']);
+    
+    foreach($selectedLocations as $location){
+            $editdata['selected_locations'][] = $location['adv_location_id'];
+            $editdata['location_radius_'.$location['adv_location_id']] = $location['adv_location_radius'];
+    }
 }
 
-
+$available_locations = get_locations_details();
 require_once MAD_PATH . '/www/cp/templates/header.tpl.php';
 
 

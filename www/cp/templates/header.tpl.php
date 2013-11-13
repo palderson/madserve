@@ -79,10 +79,10 @@ header("Pragma: no-cache");
 				
 				<ul class="subNav">
 					 <?php if ($user_detail['account_type']==1 or  ($user_right['view_publications']==1)){?><li><a href="view_publications.php">View Publications</a></li><?php } ?>
+					 <?php if ($user_detail['account_type']==1 or  ($user_right['view_publications']==1)){?><li><a href="view_locations.php">View Locations</a></li><?php } ?>
 					<?php if ($user_detail['account_type']==1 or  ($user_right['modify_publications']==1)){?><li><a href="add_publication.php">+ Add Publication</a></li>	<?php } ?>			
 					<?php if ($user_detail['account_type']==1 or  ($user_right['modify_publications']==1)){?><li><a href="add_placement.php">+ Add Placement</a></li><?php } ?>
 					 <?php if ($user_detail['account_type']==1 or  ($user_right['view_publications']==1)){?><li><a href="integration.php">Integration</a></li><?php } ?>
-
 				</ul>	
 								
 			</li>
